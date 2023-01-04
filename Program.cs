@@ -1,17 +1,29 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using AkilliSayac.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AkilliSayac.Data.DbContext>(options =>
                 options.UseSqlServer(
                     builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AkilliSayac.Data.DbContext>();
+builder.Services.AddAuthorization(options => {
+    options.AddPolicy("readpolicy",
+        builder => builder.RequireRole("Admin", "SuperAdmin"));
+    options.AddPolicy("writepolicy",
+        builder => builder.RequireRole("Admin", "SuperAdmin"));
+});
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                 .AddDefaultUI()
+                 .AddEntityFrameworkStores<AkilliSayac.Data.DbContext>()
+                 .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -28,8 +40,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

@@ -2,7 +2,216 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="section dashboard">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <div class="row">
+                <!-- Reports -->
+                <div class="col-12">
+                    <div class="card">
+
+                        <div class="filter">
+                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="dropdown-header text-start">
+                                    <h6>Filter</h6>
+                                </li>
+
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#">This Month</a></li>
+                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Anomalies <span>/Today</span></h5>
+
+                            <!-- Line Chart -->
+                            <div id="reportsChart"></div>
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    new ApexCharts(document.querySelector("#reportsChart"), {
+                                        series: [{
+                                            name: 'Point',
+                                            data: [31, 40, 28, 51, 42, 82, 56],
+                                        }, {
+                                            name: 'Contextual',
+                                            data: [11, 32, 45, 32, 34, 52, 41]
+                                        }, {
+                                            name: 'Collective',
+                                            data: [15, 11, 32, 18, 9, 24, 11]
+                                        }],
+                                        chart: {
+                                            height: 350,
+                                            type: 'area',
+                                            toolbar: {
+                                                show: false
+                                            },
+                                        },
+                                        markers: {
+                                            size: 4
+                                        },
+                                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                                        fill: {
+                                            type: "gradient",
+                                            gradient: {
+                                                shadeIntensity: 1,
+                                                opacityFrom: 0.3,
+                                                opacityTo: 0.4,
+                                                stops: [0, 90, 100]
+                                            }
+                                        },
+                                        dataLabels: {
+                                            enabled: false
+                                        },
+                                        stroke: {
+                                            curve: 'smooth',
+                                            width: 2
+                                        },
+                                        xaxis: {
+                                            type: 'datetime',
+                                            categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                                        },
+                                        tooltip: {
+                                            x: {
+                                                format: 'dd/MM/yy HH:mm'
+                                            },
+                                        }
+                                    }).render();
+                                });
+                            </script>
+                            <!-- End Line Chart -->
+
+                        </div>
+
+                    </div>
+                </div><!-- End Reports -->
+                <!-- Recent Sales -->
+                <div class="col-12">
+                    <div class="card recent-sales overflow-auto">
+
+                        <div class="filter">
+                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="dropdown-header text-start">
+                                    <h6>Filter</h6>
+                                </li>
+
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#">This Month</a></li>
+                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Logs <span>| Today</span></h5>
+
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Position</th>
+                                        <th scope="col">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">#1</th>
+                                        <td>Brandon Jacob</td>
+                                        <td>Developer</td>
+                                        <td>2023-01-02 22:07:23</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#2</th>
+                                        <td>Bridie Kessler</td>
+                                        <td>Developer</td>
+                                        <td>2023-01-02 12:46:57</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#3</th>
+                                        <td>Ashleigh Langosh</td>
+                                        <td>Developer</td>
+                                        <td>2023-01-02 23:23:01</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#4</th>
+                                        <td>Angus Grady</td>
+                                        <td>Developer</td>
+                                        <td>2023-01-02 18:37:08</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">#5</th>
+                                        <td>Raheem Lehner</td>
+                                        <td>Developer</td>
+                                        <td>2023-01-02 19:53:37</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div><!-- End Recent Sales -->
+            </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title">Malwares</h5>
+                        <!-- Pie Chart -->
+                        <div id="pieChart" style="min-height: 400px;" class="echart"></div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                echarts.init(document.querySelector("#pieChart")).setOption({
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    legend: {
+                                        orient: 'horizontal',
+                                        left: 'center'
+                                    },
+                                    series: [{
+                                        name: 'Access From',
+                                        type: 'pie',
+                                        radius: '50%',
+                                        data: [{
+                                            value: 1048,
+                                            name: 'Worm'
+                                        },
+                                        {
+                                            value: 735,
+                                            name: 'Rootkit'
+                                        },
+                                        {
+                                            value: 580,
+                                            name: 'Spyware'
+                                        },
+                                        {
+                                            value: 484,
+                                            name: 'Adware'
+                                        },
+                                        ],
+                                        emphasis: {
+                                            itemStyle: {
+                                                shadowBlur: 10,
+                                                shadowOffsetX: 0,
+                                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        }
+                                    }]
+                                });
+                            });
+                        </script>
+                        <!-- End Pie Chart -->
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>

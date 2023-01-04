@@ -1,0 +1,142 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+
+    <!-- Favicons -->
+    <link href="~/img/favicon.png" rel="icon" asp-append-version="true">
+    <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon" asp-append-version="true">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/quill/quill.snow.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/quill/quill.bubble.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/remixicon/remixicon.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/simple-datatables/style.css" rel="stylesheet" asp-append-version="true">
+
+    <!-- Template Main CSS File -->
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                            <div class="d-flex justify-content-center py-4">
+                                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                                    <img src="~/img/logo.png" alt="">
+                                    <span class="d-none d-lg-block">NiceAdmin</span>
+                                </a>
+                            </div><!-- End Logo -->
+
+                            <div class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                                        <p class="text-center small">Enter your username & password to login</p>
+                                    </div>
+
+                                    <form class="row g-3 needs-validation" id="account" method="post">
+
+                                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                                        <div class="col-12">
+                                            <label asp-for="Input.Email" class="form-label">Email</label>
+                                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label asp-for="Input.Password" class="form-label">Password</label>
+                                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
+                                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <label asp-for="Input.RememberMe" class="form-label">
+                                                    <input class="form-check-input" asp-for="Input.RememberMe" />
+                                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="login-submit">Login</button>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <p class="small mb-0">
+                                                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                                            </p>
+                                            <p class="small mb-0">
+                                                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                                            </p>
+                                            <p class="small mb-0">
+                                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                            </p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="credits">
+                                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/lib/apexcharts/apexcharts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/lib/chart.js/chart.min.js" asp-append-version="true"></script>
+    <script src="~/lib/echarts/echarts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/quill/quill.min.js" asp-append-version="true"></script>
+    <script src="~/lib/simple-datatables/simple-datatables.js" asp-append-version="true"></script>
+    <script src="~/lib/tinymce/tinymce.min.js" asp-append-version="true"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js" asp-append-version="true"></script>
+
+</body>
+
+</html>

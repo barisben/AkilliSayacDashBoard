@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using AkilliSayac.Data;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,7 +35,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Cookie.Name = "AspNetCore.Identity.Application";
-    options.ExpireTimeSpan = TimeSpan.FromSeconds(10);
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
     options.Cookie.MaxAge = options.ExpireTimeSpan;
     options.SlidingExpiration = true;
 });
@@ -42,6 +44,7 @@ builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -53,6 +56,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
 app.UseRouting();
 

@@ -9,20 +9,26 @@
     }
 }
 
-<h1>Manage your account</h1>
-
-<div>
-    <h2>Change your account settings</h2>
+<div class="pagetitle">
+    <h1>Profil</h1>
     <hr />
-    <div class="row">
-        <div class="col-md-3">
-            <partial name="_ManageNav" />
-        </div>
-        <div class="col-md-9">
-            @RenderBody()
-        </div>
-    </div>
 </div>
+
+<section class="section profile">
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-body pt-3">
+                    <partial name="_ManageNav" />
+                    <div class="tab-content pt-2">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div> 
+        </div>
+       
+    </div>
+</section>
 
 @section Scripts {
     @RenderSection("Scripts", required: false)

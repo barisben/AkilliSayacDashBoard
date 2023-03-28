@@ -2,7 +2,7 @@
 @model LoginModel
 
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Giriş Yap";
     Layout = null;
 }
 
@@ -59,8 +59,8 @@
                                 <div class="card-body">
 
                                     <div class="pt-4 pb-2">
-                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p class="text-center small">Enter your username & password to login</p>
+                                        <h5 class="card-title text-center pb-0 fs-4">@ViewData["Title"]</h5>
+                                        <p class="text-center small">Giriş yapmak için email & şifre girin.</p>
                                     </div>
 
                                     <form class="row g-3 needs-validation" id="account" method="post">
@@ -73,7 +73,7 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <label asp-for="Input.Password" class="form-label">Password</label>
+                                            <label asp-for="Input.Password" class="form-label">Şifre</label>
                                             <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
                                             <span asp-validation-for="Input.Password" class="text-danger"></span>
                                         </div>
@@ -88,18 +88,12 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="login-submit">Login</button>
+                                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="login-submit">Giriş Yap</button>
                                         </div>
 
                                         <div class="col-12">
                                             <p class="small mb-0">
-                                                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                                            </p>
-                                            <p class="small mb-0">
-                                                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                                            </p>
-                                            <p class="small mb-0">
-                                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                                <a id="forgot-password" asp-page="./ForgotPassword">Şifremi Unuttum</a>
                                             </p>
                                         </div>
                                     </form>

@@ -16,11 +16,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 
 namespace AkilliSayac.Areas.Identity.Pages.Account
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -29,6 +31,9 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        public List<SelectListItem> Roles { get; }
+        
+
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -43,6 +48,12 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+
+            Roles = new List<SelectListItem>
+            {
+                new SelectListItem {Value = "Admin", Text ="Admin"},
+                new SelectListItem {Value = "SuperAdmin", Text = "SuperAdmin"}
+            };
         }
 
         /// <summary>
@@ -70,13 +81,16 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+            [Required]
+            [Display(Name = "Kullanıcı Rolü")]
+            public string UserRole { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
             [EmailAddress]
-            [Display(Name = "Email")]
+            [Display(Name = "E-mail")]
             public string Email { get; set; }
 
             /// <summary>
@@ -121,7 +135,8 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    await _userManager.AddToRoleAsync(user, "Admin");
+
+                    await _userManager.AddToRoleAsync(user, Input.UserRole);
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

@@ -69,7 +69,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             /// </summary>
             [Required]
             [EmailAddress]
-            [Display(Name = "New email")]
+            [Display(Name = "Yeni E-Mail")]
             public string NewEmail { get; set; }
         }
 
@@ -132,7 +132,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
                 return RedirectToPage();
             }
 
-            StatusMessage = "Your email is unchanged.";
+            StatusMessage = "E-Mail değiştirilmedi.";
             return RedirectToPage();
         }
 

@@ -11,19 +11,127 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AkilliSayac.Migrations
 {
-    [DbContext(typeof(Data.DbContext))]
-    [Migration("20230104223211_test")]
-    partial class test
+    [DbContext(typeof(ApplicationDbContext))]
+    [Migration("20230328014705_First")]
+    partial class First
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.1")
+                .HasAnnotation("ProductVersion", "7.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("AkilliSayac.Models.Anomaly", b =>
+                {
+                    b.Property<int>("AnomalyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnomalyId"));
+
+                    b.Property<DateTime>("AnomalyTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("AnomalyTypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AnomalyId");
+
+                    b.ToTable("Anomalies");
+                });
+
+            modelBuilder.Entity("AkilliSayac.Models.AnomalyType", b =>
+                {
+                    b.Property<int>("AnomalyTypeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnomalyTypeId"));
+
+                    b.Property<string>("AnomalyTypeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AnomalyTypeId");
+
+                    b.ToTable("AnomalyTypes");
+                });
+
+            modelBuilder.Entity("AkilliSayac.Models.Log", b =>
+                {
+                    b.Property<int>("LogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LogId"));
+
+                    b.Property<DateTime>("LogTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LogTypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("LogId");
+
+                    b.ToTable("Logs");
+                });
+
+            modelBuilder.Entity("AkilliSayac.Models.LogType", b =>
+                {
+                    b.Property<int>("LogTypeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LogTypeId"));
+
+                    b.Property<string>("LogTypeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("LogTypeId");
+
+                    b.ToTable("LogTypes");
+                });
+
+            modelBuilder.Entity("AkilliSayac.Models.Malware", b =>
+                {
+                    b.Property<int>("MalwareId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MalwareId"));
+
+                    b.Property<DateTime>("MalwareTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MalwareTypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MalwareId");
+
+                    b.ToTable("Malwares");
+                });
+
+            modelBuilder.Entity("AkilliSayac.Models.MalwareType", b =>
+                {
+                    b.Property<int>("MalwareTypeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MalwareTypeId"));
+
+                    b.Property<string>("MalwareTypeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MalwareTypeId");
+
+                    b.ToTable("MalwareTypes");
+                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {

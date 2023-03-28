@@ -6,11 +6,38 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AkilliSayac.Migrations
 {
     /// <inheritdoc />
-    public partial class test : Migration
+    public partial class First : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Anomalies",
+                columns: table => new
+                {
+                    AnomalyId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AnomalyTypeId = table.Column<int>(type: "int", nullable: false),
+                    AnomalyTime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Anomalies", x => x.AnomalyId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AnomalyTypes",
+                columns: table => new
+                {
+                    AnomalyTypeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AnomalyTypeName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AnomalyTypes", x => x.AnomalyTypeId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -48,6 +75,60 @@ namespace AkilliSayac.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Logs",
+                columns: table => new
+                {
+                    LogId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogTypeId = table.Column<int>(type: "int", nullable: false),
+                    LogTime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Logs", x => x.LogId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "LogTypes",
+                columns: table => new
+                {
+                    LogTypeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LogTypeName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LogTypes", x => x.LogTypeId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Malwares",
+                columns: table => new
+                {
+                    MalwareId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MalwareTypeId = table.Column<int>(type: "int", nullable: false),
+                    MalwareTime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Malwares", x => x.MalwareId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MalwareTypes",
+                columns: table => new
+                {
+                    MalwareTypeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MalwareTypeName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MalwareTypes", x => x.MalwareTypeId);
                 });
 
             migrationBuilder.CreateTable(
@@ -200,6 +281,12 @@ namespace AkilliSayac.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Anomalies");
+
+            migrationBuilder.DropTable(
+                name: "AnomalyTypes");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
             migrationBuilder.DropTable(
@@ -213,6 +300,18 @@ namespace AkilliSayac.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Logs");
+
+            migrationBuilder.DropTable(
+                name: "LogTypes");
+
+            migrationBuilder.DropTable(
+                name: "Malwares");
+
+            migrationBuilder.DropTable(
+                name: "MalwareTypes");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

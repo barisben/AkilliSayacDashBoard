@@ -1,4 +1,5 @@
 ﻿using AkilliSayac.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,9 +8,8 @@ using System.Text;
 
 namespace AkilliSayac.Data
 {
-    public class DbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
-
         public virtual DbSet<LogType> LogTypes { get; set; }
         public virtual DbSet<MalwareType> MalwareTypes { get; set; }
         public virtual DbSet<AnomalyType> AnomalyTypes { get; set; }
@@ -17,7 +17,7 @@ namespace AkilliSayac.Data
         public virtual DbSet<Malware> Malwares { get; set; }
         public virtual DbSet<Anomaly> Anomalies { get; set; }
 
-        public DbContext(DbContextOptions<DbContext> options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }

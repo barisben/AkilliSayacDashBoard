@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,34 +7,20 @@ using System.Threading.Tasks;
 
 namespace AkilliSayac.Controllers
 {
-    [Authorize(Roles = "SuperAdmin")]
-    public class SuperAdminController : Controller
+    [Authorize]
+    public class ServiceController : Controller
     {
-        private UserManager<IdentityUser> userManager;
-        private RoleManager<IdentityRole> roleManager;
-
-        public SuperAdminController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
+        public IActionResult Anomaly()
         {
-            this.roleManager = roleManager;
-            this.userManager = userManager;
+            return View();
         }
-
-        public IActionResult Create()
+        public IActionResult Log()
         {
-            return View(new IdentityRole());
+            return View();
         }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(IdentityRole role)
+        public IActionResult Malware()
         {
-            await roleManager.CreateAsync(role);
-            return RedirectToAction("Index");
-        }
-
-        public IActionResult UserList()
-        {
-            var users = userManager.Users.ToList();
-            return View(users);
+            return View();
         }
     }
 }

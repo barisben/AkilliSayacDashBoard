@@ -36,6 +36,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostAsync()
         {
+            /*
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -63,6 +64,8 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 
             Response.Headers.Add("Content-Disposition", "attachment; filename=PersonalData.json");
             return new FileContentResult(JsonSerializer.SerializeToUtf8Bytes(personalData), "application/json");
+            */
+            return NotFound();
         }
     }
 }

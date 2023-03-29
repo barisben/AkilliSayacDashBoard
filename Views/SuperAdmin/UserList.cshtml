@@ -16,6 +16,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>Durum</th>
                     <th>İsim</th>
                     <th>Soyisim</th>
                     <th>Email</th>
@@ -27,6 +28,27 @@
                 @foreach (var user in Model)
                 {
                     <tr>
+                        <td>
+                            @{
+                                if (User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value != @user.Id)
+                                {
+                                    if (user.LockoutEnd == null)
+                                    {
+                                        <form asp-action="Lock" asp-route-id="@user.Id">
+                                            <input type="hidden" asp-for="@user.Id" />
+                                            <button type="submit" class="btn btn-success btn-sm"><i class="bi bi-check"></i></button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <form asp-action="UnLock" asp-route-id="@user.Id">
+                                            <input type="hidden" asp-for="@user.Id" />
+                                            <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button>
+                                        </form>
+                                    }
+                                }
+                            }
+                        </td>
                         <td>@user.FirstName</td>
                         <td>@user.LastName</td>
                         <td>@user.Email</td>
@@ -49,10 +71,8 @@
                                 {
                                     <form asp-action="Delete" asp-route-id="@user.Id">
                                         <input type="hidden" asp-for="@user.Id"/>
-                                        <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                        <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-person-x-fill"></i></button>
                                     </form>
-
-
                                 }
                             }
                         </td>
@@ -61,6 +81,6 @@
             </tbody>
         </table>
 
-        <p><a asp-area="Identity" asp-page="/Account/Register" class="btn btn-success btn-sm"><i class="bi bi-person-plus"></i> Yeni Kayıt Oluştur</a></p>
+        <p><a asp-area="Identity" asp-page="/Account/Register" class="btn btn-success btn-sm"><i class="bi bi-person-plus-fill"></i> Yeni Kayıt Oluştur</a></p>
     </div>
 </section>

@@ -32,6 +32,9 @@ builder.Services.AddIdentity<AkilliSayacUser, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
     options.SignIn.RequireConfirmedEmail = false;
+    options.Lockout.MaxFailedAccessAttempts = 5;
+    options.Lockout.AllowedForNewUsers = true;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromDays(1000);
 })
                  .AddDefaultUI()
                  .AddEntityFrameworkStores<ApplicationDbContext>()

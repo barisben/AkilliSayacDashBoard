@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AkilliSayac.Areas.Identity.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,10 +12,10 @@ namespace AkilliSayac.Controllers
     [Authorize(Roles = "SuperAdmin")]
     public class SuperAdminController : Controller
     {
-        private UserManager<IdentityUser> userManager;
+        private UserManager<AkilliSayacUser> userManager;
         private RoleManager<IdentityRole> roleManager;
 
-        public SuperAdminController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
+        public SuperAdminController(RoleManager<IdentityRole> roleManager, UserManager<AkilliSayacUser> userManager)
         {
             this.roleManager = roleManager;
             this.userManager = userManager;

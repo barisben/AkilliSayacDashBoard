@@ -1,4 +1,5 @@
-﻿using AkilliSayac.Models;
+﻿using AkilliSayac.Areas.Identity.Data;
+using AkilliSayac.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +9,7 @@ using System.Text;
 
 namespace AkilliSayac.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<AkilliSayacUser>
     {
         public virtual DbSet<LogType> LogTypes { get; set; }
         public virtual DbSet<MalwareType> MalwareTypes { get; set; }

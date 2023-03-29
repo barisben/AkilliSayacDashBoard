@@ -7,6 +7,7 @@ using System.Net;
 using AkilliSayac.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using AkilliSayac.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +28,7 @@ builder.Services.AddAuthorization(options => {
 });
 
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+builder.Services.AddIdentity<AkilliSayacUser, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
     options.SignIn.RequireConfirmedEmail = false;
@@ -74,10 +75,10 @@ app.UseSession();
 
 using (var scope = app.Services.CreateScope())
 {
-    var userManager = scope.ServiceProvider.GetService(typeof(UserManager<IdentityUser>));
+    var userManager = scope.ServiceProvider.GetService(typeof(UserManager<AkilliSayacUser>));
     var roleManager = scope.ServiceProvider.GetService(typeof(RoleManager<IdentityRole>));
 
-    ContextSeed.Seed((UserManager<IdentityUser>) userManager, (RoleManager<IdentityRole>) roleManager);
+    ContextSeed.Seed((UserManager<AkilliSayacUser>) userManager, (RoleManager<IdentityRole>) roleManager);
 }
 
 app.MapControllerRoute(

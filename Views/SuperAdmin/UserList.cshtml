@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+﻿@using AkilliSayac.Areas.Identity.Data;
+
+@model IEnumerable<AkilliSayacUser>
 
 @{
     ViewData["Title"] = "Kullanıcı Listesi";
@@ -14,6 +16,8 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>İsim</th>
+                    <th>Soyisim</th>
                     <th>Email</th>
                     <th>Kullanıcı Rolü</th>
                     <th></th>
@@ -23,14 +27,16 @@
                 @foreach (var user in Model)
                 {
                     <tr>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
                         <td>@user.Email</td>
                         <td>
                             @{
-                                if (User.IsInRole("Admin"))
+                                if (user.RoleName == "Admin")
                                 {
                                     @:Admin
                                 }
-                                else if (User.IsInRole("SuperAdmin"))
+                                else if (user.RoleName == "SuperAdmin")
                                 {
                                     @:SuperAdmin
                                 }
@@ -43,7 +49,7 @@
                                 {
                                     <form asp-action="Delete" asp-route-id="@user.Id">
                                         <input type="hidden" asp-for="@user.Id"/>
-                                        <input type="submit" value="x" class="btn btn-danger"/>
+                                        <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
                                     </form>
 
 

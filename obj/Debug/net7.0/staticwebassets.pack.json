@@ -3329,6 +3329,14 @@
       "PackagePath": "staticwebassets\\lib\\tinymce\\tinymce.min.js"
     },
     {
+      "Id": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\logs\\cihaztanigunlugu.txt",
+      "PackagePath": "staticwebassets\\logs\\cihaztanigunlugu.txt"
+    },
+    {
+      "Id": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\logs\\logsnx.txt",
+      "PackagePath": "staticwebassets\\logs\\logsnx.txt"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.AkilliSayac.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

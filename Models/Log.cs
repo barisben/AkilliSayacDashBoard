@@ -11,6 +11,11 @@ namespace AkilliSayac.Models
         [ForeignKey("LogTypes")]
         public int LogTypeId { get; set; }
         [Required]
+        [ForeignKey("Devices")]
+        public int DeviceId { get; set; }
+        [Required]
+        public string LogMessage { get; set; } = string.Empty;
+        [Required]
         [DataType(DataType.Date)]
         public DateTime LogTime { get; set; }
     }

@@ -8,5 +8,6 @@ namespace AkilliSayac.Models
         public int LogTypeId { get; set; }
         [Required]
         public string LogTypeName { get; set; } = string.Empty;
+        public int ?LogMessageNumber { get; set; }
     }
 }

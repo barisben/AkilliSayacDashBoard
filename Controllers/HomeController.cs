@@ -1,6 +1,8 @@
-﻿using AkilliSayac.Models;
+﻿using AkilliSayac.Data;
+using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace AkilliSayac.Controllers
@@ -9,14 +11,20 @@ namespace AkilliSayac.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _db;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
         {
             _logger = logger;
+            _db = db;
         }
 
         public IActionResult Index()
         {
+            ViewData["Logs"] = _db.Logs.ToList();
+            ViewData["LogTypes"] = _db.LogTypes.ToList();
+            ViewData["Devices"] = _db.Devices.ToList();
             return View();
         }
 

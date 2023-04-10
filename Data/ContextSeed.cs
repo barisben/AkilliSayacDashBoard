@@ -1,10 +1,12 @@
 ﻿using AkilliSayac.Areas.Identity.Data;
 using AkilliSayac.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using System;
 
 namespace AkilliSayac.Data
 {
+    [Authorize]
     public static class ContextSeed
     {
         public static void Seed(UserManager<AkilliSayacUser> userManager, RoleManager<IdentityRole> roleManager)
@@ -13,7 +15,7 @@ namespace AkilliSayac.Data
             SeedUsers(userManager);
         }
 
-        public static void SeedRoles(RoleManager<IdentityRole> roleManager)
+        private static void SeedRoles(RoleManager<IdentityRole> roleManager)
         {
             if (!roleManager.RoleExistsAsync("SuperAdmin").Result)
             {
@@ -33,7 +35,7 @@ namespace AkilliSayac.Data
             }
         }
 
-        public static void SeedUsers(UserManager<AkilliSayacUser> userManager)
+        private static void SeedUsers(UserManager<AkilliSayacUser> userManager)
         {
             if(userManager.FindByEmailAsync("baris@sau.edu.tr").Result == null)
             {

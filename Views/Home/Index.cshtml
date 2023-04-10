@@ -1,5 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Anasayfa";
+
+    IEnumerable<Log> logs = ViewData["Logs"] as IEnumerable<Log>;
+    IEnumerable<LogType> logTypes = ViewData["LogTypes"] as IEnumerable<LogType>;
+    IEnumerable<Device> devices = ViewData["Devices"] as IEnumerable<Device>;
 }
 
 <section class="section dashboard">
@@ -89,73 +93,67 @@
 
                     </div>
                 </div><!-- End Reports -->
-                <!-- Recent Sales -->
+
+
+
+
+                <!-- LOGS -->
                 <div class="col-12">
                     <div class="card recent-sales overflow-auto">
 
-                        <div class="filter">
-                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <li class="dropdown-header text-start">
-                                    <h6>Filter</h6>
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Today</a></li>
-                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                <li><a class="dropdown-item" href="#">This Year</a></li>
-                            </ul>
-                        </div>
-
                         <div class="card-body">
-                            <h5 class="card-title">Logs <span>| Today</span></h5>
+                            <h5 class="card-title">Logs</h5>
 
-                            <table class="table table-borderless">
+                            <table class="table datatable">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Position</th>
-                                        <th scope="col">Date</th>
+                                        <th scope="col">Tarih</th>
+                                        <th scope="col">Cihaz</th>
+                                        <th scope="col">Log Tipi</th>
+                                        <th scope="col">Mesaj</th>
+                                        <th scope="col">Durum</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">#1</th>
-                                        <td>Brandon Jacob</td>
-                                        <td>Developer</td>
-                                        <td>2023-01-02 22:07:23</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">#2</th>
-                                        <td>Bridie Kessler</td>
-                                        <td>Developer</td>
-                                        <td>2023-01-02 12:46:57</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">#3</th>
-                                        <td>Ashleigh Langosh</td>
-                                        <td>Developer</td>
-                                        <td>2023-01-02 23:23:01</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">#4</th>
-                                        <td>Angus Grady</td>
-                                        <td>Developer</td>
-                                        <td>2023-01-02 18:37:08</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">#5</th>
-                                        <td>Raheem Lehner</td>
-                                        <td>Developer</td>
-                                        <td>2023-01-02 19:53:37</td>
-                                    </tr>
+                                    @foreach (Log log in logs)
+                                    {
+                                        <tr>
+                                            @{
+                                                var logType = logTypes.Where(x => x.LogTypeId == log.LogTypeId).FirstOrDefault();
+                                            }
+                                            <td>@log.LogTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                            <td>@devices.Where(x => x.DeviceId == log.DeviceId).FirstOrDefault().DeviceName</td>
+                                            <td>@logType.LogTypeName</td>
+                                            <td>@log.LogMessage</td>
+                                            <td>
+                                                @{
+                                                    if (logType.LogTypeId == 1)
+                                                    {
+                                                        <span class="badge bg-warning text-dark">Sistem</span>
+                                                    }
+                                                    else if (logType.LogTypeId == 2 || logType.LogTypeId == 4 || logType.LogTypeId == 5)
+                                                    {
+                                                        <span class="badge bg-danger">Arıza</span>
+                                                    }
+                                                    else if (logType.LogTypeId == 3)
+                                                    {
+                                                        <span class="badge bg-success">Başarılı</span>
+                                                    }
+
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
                                 </tbody>
                             </table>
 
                         </div>
 
                     </div>
-                </div><!-- End Recent Sales -->
+                </div><!-- End LOGS -->
+
+
+
             </div>
         </div><!-- End Left side columns -->
 

@@ -1,0 +1,190 @@
+Feb 24 18:04:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 24 18:04:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Storage capacity of security audit has decreased below the set threshold of '100%' entries.
+Feb 24 18:09:48 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Feb 24 18:09:48 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 11:40:03 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.22'.
+Feb 27 11:40:06 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.22'.
+Feb 27 11:50:01 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Feb 27 11:57:55 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.22'.
+Feb 27 11:59:14 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.22'.
+Feb 27 12:03:54 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:04:50 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:04:43 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Audit log was downloaded from '10.10.41.60'.
+Feb 27 12:05:00 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Audit log was downloaded from '10.10.41.60'.
+Feb 27 12:07:13 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:07:40 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:10:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 12:10:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user-interactive session has been terminated due to timeout ('1' minutes).
+Feb 27 12:10:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user-interactive session has been terminated due to timeout ('1' minutes).
+Feb 27 12:25:07 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user-interactive session has been terminated due to timeout ('15' minutes).
+Feb 27 12:30:39 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Attempted use of illegitimate configuration software [from '0.0.0.0'].
+Feb 27 12:37:46 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user-interactive session has been terminated due to timeout ('15' minutes).
+Feb 27 12:48:17 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Feb 27 12:54:08 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Feb 27 12:55:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:55:36 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:57:05 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:57:06 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 12:57:28 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Configuration settings were downloaded from '10.10.41.60'.
+Feb 27 12:57:32 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Configuration settings were downloaded from '10.10.41.60'.
+Feb 27 12:59:08 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Audit log was downloaded from '10.10.41.60'.
+Feb 27 13:04:19 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Audit log was downloaded from '10.10.41.60'.
+Feb 27 13:08:43 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Audit log was downloaded from '10.10.41.60'.
+Feb 27 13:09:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Feb 27 13:09:49 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Configuration settings were downloaded from '10.10.41.60'.
+Feb 27 13:09:53 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Configuration settings were downloaded from '10.10.41.60'.
+Feb 27 13:10:46 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user-interactive session has been terminated due to timeout ('15' minutes).
+Feb 27 13:11:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Audit log was downloaded from '10.10.41.60'.
+Feb 27 13:23:33 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user-interactive session has been terminated due to timeout ('15' minutes).
+Feb 27 13:30:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:32:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F03_Q0 close'. Additional information: ' -'.
+Feb 27 13:32:13 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:32:18 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F02_Q0 close'. Additional information: ' -'.
+Feb 27 13:33:18 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:34:46 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user-interactive session has been terminated due to timeout ('15' minutes).
+Feb 27 13:35:14 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:35:17 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:39:29 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:39:32 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:47:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:48:29 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 13:50:42 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 14:08:21 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 14:08:21 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Feb 27 14:35:24 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Feb 27 14:35:24 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has ended an interactive session.
+Feb 28 20:07:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Feb 28 20:11:27 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Feb 28 20:11:32 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 16:04:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  1 16:04:16 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 close'. Additional information: ' -'.
+Mar  1 16:04:22 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q2 open'. Additional information: ' -'.
+Mar  1 16:04:25 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F04_Q0 open'. Additional information: ' -'.
+Mar  1 16:30:48 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Mar  1 17:03:30 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Mar  1 17:03:31 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Restart initiated from '10.10.41.60' [with action: 'start load configuration'].
+Mar  1 17:04:16 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Configuration settings were uploaded from '10.10.41.60'.
+Mar  1 17:04:16 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Restart initiated from '10.10.41.60' [with action: 'start process mode'].
+Mar  1 17:04:41 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Mar  1 17:04:54 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.22'.
+Mar  1 17:05:23 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user-interactive session has been terminated due to timeout ('1' minutes).
+Mar  1 17:05:56 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Mar  1 17:05:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has ended an interactive session.
+Mar  1 17:06:36 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  1 17:06:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  1 17:32:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 17:37:49 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  1 17:38:14 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 17:38:19 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO open'. Additional information: ' -'.
+Mar  1 17:38:25 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  1 18:32:49 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 18:47:05 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  1 18:52:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  1 18:53:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 18:53:11 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  1 18:53:17 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  1 19:01:49 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 19:02:00 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  1 19:02:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  1 19:02:21 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  1 19:05:17 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  1 19:05:23 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  1 19:53:25 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  2 09:57:53 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 open'. Additional information: ' -'.
+Mar  2 09:57:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 close'. Additional information: ' -'.
+Mar  2 10:51:17 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  2 10:51:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  2 10:52:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Mar  2 10:52:03 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has ended an interactive session.
+Mar  2 10:53:38 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 10:53:48 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  2 10:53:52 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 10:54:12 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  2 11:09:25 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  2 11:28:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 11:28:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 11:30:45 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 11:30:50 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 11:35:52 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  2 11:35:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 11:36:07 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  2 11:36:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 11:36:31 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 11:41:14 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 11:41:23 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 11:43:42 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 11:45:09 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 11:45:14 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F02_Q0 open'. Additional information: ' -'.
+Mar  2 12:01:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 12:03:23 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 12:03:29 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 12:13:35 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  2 12:13:39 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  2 19:44:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Mar  2 19:44:59 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has ended an interactive session.
+Mar  2 19:45:21 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Mar  2 19:45:21 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Configuration settings were downloaded from '10.10.41.60'.
+Mar  2 19:45:22 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Settings related to offline security monitoring changed: 'Sec. Ev. Logg.: Enable logging' [set to value 'true'].
+Mar  2 19:45:22 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': Configuration settings were uploaded from '10.10.41.60'.
+Mar  2 19:45:22 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has ended an interactive session.
+Mar  2 19:45:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  2 19:45:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Configuration settings were downloaded from '10.10.41.60'.
+Mar  2 19:45:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Settings related to offline security monitoring changed: 'Sec. Ev. Logg.: Enable logging' [set to value 'true'].
+Mar  2 19:45:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Configuration settings were uploaded from '10.10.41.60'.
+Mar  2 19:45:58 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  4 20:04:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Mar  4 20:06:12 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Mar  4 20:08:40 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Mar  4 20:08:40 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Mar  4 21:39:11 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  4 21:54:27 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  5 00:37:36 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  5 00:37:36 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Configuration settings were downloaded from '10.10.41.60'.
+Mar  5 00:37:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': Configuration settings were uploaded from '10.10.41.60'.
+Mar  5 00:37:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  5 00:37:53 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  5 00:39:45 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.10.41.60'.
+Mar  5 00:49:49 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  5 00:59:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has ended an interactive session.
+Mar  5 01:01:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user-interactive session has been terminated due to timeout ('15' minutes).
+Mar  6 09:01:16 Port J[Mainboard]: Siemens-Grid-Security - ﻿'7UT85': A user has initiated a remote session from '10.154.13.10'.
+Mar  6 09:01:16 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.154.13.10'.
+Mar  6 15:51:19 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  6 15:51:29 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 open'. Additional information: ' -'.
+Mar  6 15:51:35 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  6 15:51:52 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F10_Q0_OG_GIRIS open'. Additional information: ' -'.
+Mar  6 15:52:07 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q9_TRAFO close'. Additional information: ' -'.
+Mar  6 15:52:14 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F10_Q0_OG_GIRIS close'. Additional information: ' -'.
+Mar  6 15:52:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F01_Q0 close'. Additional information: ' -'.
+Mar  6 15:52:28 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.22': 'F02_Q0 close'. Additional information: ' -'.
+Mar  6 15:53:23 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  6 16:08:41 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar  6 16:46:05 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  6 16:53:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  6 16:53:26 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  6 16:57:34 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  6 16:57:53 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  6 16:58:33 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 open'. Additional information: ' -'.
+Mar  6 16:58:41 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 close'. Additional information: ' -'.
+Mar  9 03:02:59 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user-interactive session has been terminated due to timeout ('1' minutes).
+Mar  9 15:06:27 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  9 16:30:19 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  9 16:30:28 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  9 16:30:34 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  9 16:31:19 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  9 16:31:32 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 open'. Additional information: ' -'.
+Mar  9 16:31:37 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F03_Q0 open'. Additional information: ' -'.
+Mar  9 16:31:46 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  9 16:31:55 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F04_Q0 close'. Additional information: ' -'.
+Mar  9 16:32:02 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 close'. Additional information: ' -'.
+Mar  9 16:32:08 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F03_Q0 close'. Additional information: ' -'.
+Mar  9 16:32:47 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  9 16:32:52 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  9 16:32:54 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  9 16:33:00 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F02_Q0 open'. Additional information: ' -'.
+Mar  9 16:35:57 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  9 16:36:05 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 open'. Additional information: ' -'.
+Mar  9 16:36:10 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': User caused a control operation from '10.154.13.10': 'F01_Q0 close'. Additional information: ' -'.
+Mar  9 17:06:17 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has initiated a remote session from '10.10.41.60'.
+Mar  9 17:21:31 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user has ended an interactive session.
+Mar 15 02:33:20 Port J[Mainboard]: Siemens-Grid-Security - ﻿'6MD85': A user-interactive session has been terminated due to timeout ('1' minutes).

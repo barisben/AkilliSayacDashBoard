@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8H7IO4wx1M45/WU6bOeByogVSjiZlTNOIBLLL5r1loQ=",
+  "Hash": "gPHFevmjDYIypS8N4cHGOyYWMOTKOC+33uVijNuq20o=",
   "Source": "AkilliSayac",
   "BasePath": "_content/AkilliSayac",
   "Mode": "Default",
@@ -15196,6 +15196,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Identity": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\logs\\cihaztanigunlugu.txt",
+      "SourceId": "AkilliSayac",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\",
+      "BasePath": "_content/AkilliSayac",
+      "RelativePath": "logs/cihaztanigunlugu.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logs\\cihaztanigunlugu.txt"
+    },
+    {
+      "Identity": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\logs\\logsnx.txt",
+      "SourceId": "AkilliSayac",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\",
+      "BasePath": "_content/AkilliSayac",
+      "RelativePath": "logs/logsnx.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logs\\logsnx.txt"
     }
   ]
 }

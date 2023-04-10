@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AkilliSayac.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230329162743_First")]
+    [Migration("20230409235228_First")]
     partial class First
     {
         /// <inheritdoc />
@@ -135,6 +135,23 @@ namespace AkilliSayac.Migrations
                     b.ToTable("AnomalyTypes");
                 });
 
+            modelBuilder.Entity("AkilliSayac.Models.Device", b =>
+                {
+                    b.Property<int>("DeviceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeviceId"));
+
+                    b.Property<string>("DeviceName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("DeviceId");
+
+                    b.ToTable("Devices");
+                });
+
             modelBuilder.Entity("AkilliSayac.Models.Log", b =>
                 {
                     b.Property<int>("LogId")
@@ -142,6 +159,13 @@ namespace AkilliSayac.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LogId"));
+
+                    b.Property<int>("DeviceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LogMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("LogTime")
                         .HasColumnType("datetime2");
@@ -161,6 +185,9 @@ namespace AkilliSayac.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LogTypeId"));
+
+                    b.Property<int?>("LogMessageNumber")
+                        .HasColumnType("int");
 
                     b.Property<string>("LogTypeName")
                         .IsRequired()

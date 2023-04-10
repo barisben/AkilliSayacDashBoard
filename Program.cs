@@ -8,6 +8,9 @@ using AkilliSayac.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using AkilliSayac.Areas.Identity.Data;
+using Microsoft.Extensions.Hosting.Internal;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using Microsoft.EntityFrameworkCore.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,18 +43,13 @@ builder.Services.AddIdentity<AkilliSayacUser, IdentityRole>(options =>
                  .AddEntityFrameworkStores<ApplicationDbContext>()
                  .AddDefaultTokenProviders();
 
-
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.Cookie.Name = "AspNetCore.Identity.Application";
     options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
     options.Cookie.MaxAge = options.ExpireTimeSpan;
     options.SlidingExpiration = true;
     options.Cookie.HttpOnly = true;
 });
-
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -74,14 +72,15 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseSession();
-
 using (var scope = app.Services.CreateScope())
 {
     var userManager = scope.ServiceProvider.GetService(typeof(UserManager<AkilliSayacUser>));
     var roleManager = scope.ServiceProvider.GetService(typeof(RoleManager<IdentityRole>));
+    var hostingEnvironment = scope.ServiceProvider.GetService(typeof(IWebHostEnvironment));
+    var db = scope.ServiceProvider.GetService(typeof(ApplicationDbContext));
 
-    ContextSeed.Seed((UserManager<AkilliSayacUser>) userManager, (RoleManager<IdentityRole>) roleManager);
+    ContextSeed.Seed((UserManager<AkilliSayacUser>)userManager, (RoleManager<IdentityRole>)roleManager);
+    LogOperation.GetAllLogsFromFiles((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
 }
 
 app.MapControllerRoute(

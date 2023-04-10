@@ -11,6 +11,7 @@ namespace AkilliSayac.Data
 {
     public class ApplicationDbContext : IdentityDbContext<AkilliSayacUser>
     {
+        public virtual DbSet<Device> Devices { get; set; }
         public virtual DbSet<LogType> LogTypes { get; set; }
         public virtual DbSet<MalwareType> MalwareTypes { get; set; }
         public virtual DbSet<AnomalyType> AnomalyTypes { get; set; }

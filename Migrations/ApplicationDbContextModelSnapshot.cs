@@ -104,10 +104,20 @@ namespace AkilliSayac.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnomalyId"));
 
+                    b.Property<string>("AnomalyMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("AnomalyTime")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("AnomalyTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AnomalyValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeviceId")
                         .HasColumnType("int");
 
                     b.HasKey("AnomalyId");
@@ -202,6 +212,13 @@ namespace AkilliSayac.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MalwareId"));
+
+                    b.Property<int>("DeviceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MalwareMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("MalwareTime")
                         .HasColumnType("datetime2");

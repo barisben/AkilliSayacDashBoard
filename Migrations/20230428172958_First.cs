@@ -18,6 +18,9 @@ namespace AkilliSayac.Migrations
                     AnomalyId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AnomalyTypeId = table.Column<int>(type: "int", nullable: false),
+                    DeviceId = table.Column<int>(type: "int", nullable: false),
+                    AnomalyMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AnomalyValue = table.Column<int>(type: "int", nullable: false),
                     AnomalyTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -130,6 +133,8 @@ namespace AkilliSayac.Migrations
                     MalwareId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     MalwareTypeId = table.Column<int>(type: "int", nullable: false),
+                    DeviceId = table.Column<int>(type: "int", nullable: false),
+                    MalwareMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MalwareTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

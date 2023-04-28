@@ -3337,6 +3337,14 @@
       "PackagePath": "staticwebassets\\logs\\logsnx.txt"
     },
     {
+      "Id": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\logs\\randanomalylog.txt",
+      "PackagePath": "staticwebassets\\logs\\randanomalylog.txt"
+    },
+    {
+      "Id": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\logs\\randmalwarelog.txt",
+      "PackagePath": "staticwebassets\\logs\\randmalwarelog.txt"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.AkilliSayac.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

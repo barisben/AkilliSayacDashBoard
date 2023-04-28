@@ -56,9 +56,9 @@ namespace AkilliSayac.Data
                         log.LogTypeId = db.LogTypes.Where(x => x.LogTypeName == "Sistem").FirstOrDefault().LogTypeId;
 
                         db.Logs.AddAsync(log);
-                        db.SaveChanges();
                     }
                 }
+                db.SaveChanges();
             }
         }
 
@@ -87,9 +87,9 @@ namespace AkilliSayac.Data
                         log.LogMessage = message;
 
                         db.Logs.Add(log);
-                        db.SaveChanges();
                     }
                 }
+                db.SaveChanges();
             }
         }    
     }

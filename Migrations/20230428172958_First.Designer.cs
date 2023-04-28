@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AkilliSayac.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230409235228_First")]
+    [Migration("20230428172958_First")]
     partial class First
     {
         /// <inheritdoc />
@@ -107,10 +107,20 @@ namespace AkilliSayac.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnomalyId"));
 
+                    b.Property<string>("AnomalyMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("AnomalyTime")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("AnomalyTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AnomalyValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeviceId")
                         .HasColumnType("int");
 
                     b.HasKey("AnomalyId");
@@ -205,6 +215,13 @@ namespace AkilliSayac.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MalwareId"));
+
+                    b.Property<int>("DeviceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MalwareMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("MalwareTime")
                         .HasColumnType("datetime2");

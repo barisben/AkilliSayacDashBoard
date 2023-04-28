@@ -1,0 +1,399 @@
+2022-09-03 09:10:39 - 7UT85 - 28 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-17 05:35:54 - 6MD85 - 1 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-01-07 05:15:31 - 7UT85 - 79 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-11-26 02:16:43 - 7UT85 - 73 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-10-13 17:48:58 - 7UT85 - 13 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-12-26 02:23:59 - 6MD85 - 62 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-03-07 03:08:30 - 7UT85 - 33 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-08-15 02:10:41 - 6MD85 - 34 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-04-22 11:17:45 - 6MD85 - 82 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-01-02 02:15:35 - 6MD85 - 27 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-05-22 01:43:00 - 6MD85 - 50 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-01-16 18:52:00 - 6MD85 - 87 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-05-13 12:13:47 - 7UT85 - 15 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-08-10 14:44:11 - 7UT85 - 36 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-07-03 20:12:33 - 6MD85 - 24 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-04-22 01:26:39 - 6MD85 - 65 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-09-02 10:25:58 - 7UT85 - 14 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-05-16 11:53:00 - 7UT85 - 5 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-04-22 17:49:14 - 7UT85 - 54 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-05-12 20:15:11 - 7UT85 - 24 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-04-09 10:19:54 - 6MD85 - 99 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-10-03 00:08:02 - 6MD85 - 43 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-10-20 06:35:53 - 6MD85 - 1 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-12-07 01:34:47 - 7UT85 - 97 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-11-18 00:11:23 - 6MD85 - 98 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-02-27 12:12:47 - 7UT85 - 48 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-09-13 12:21:44 - 6MD85 - 7 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-06-18 08:54:07 - 6MD85 - 67 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-11-03 07:28:41 - 6MD85 - 58 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-06-13 21:14:57 - 7UT85 - 10 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-05-26 13:41:29 - 6MD85 - 30 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-12-07 14:37:57 - 7UT85 - 47 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-11-24 00:18:33 - 6MD85 - 99 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-07-24 21:40:58 - 7UT85 - 68 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-02-20 02:53:20 - 7UT85 - 62 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-12-26 04:19:38 - 7UT85 - 21 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-08-06 23:45:15 - 6MD85 - 71 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-07-16 22:54:20 - 6MD85 - 51 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-10-09 15:20:29 - 6MD85 - 72 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-02-09 22:51:14 - 6MD85 - 22 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-10-14 11:37:17 - 7UT85 - 53 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-10-12 17:03:10 - 7UT85 - 76 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-03-04 18:17:44 - 7UT85 - 26 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-06-10 15:42:27 - 7UT85 - 10 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-08-23 05:55:03 - 6MD85 - 46 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-08-20 03:58:02 - 7UT85 - 19 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-07-18 08:35:17 - 7UT85 - 73 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-04-22 03:01:35 - 7UT85 - 30 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-12-13 12:01:34 - 6MD85 - 91 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-05-27 16:30:59 - 7UT85 - 40 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-10-23 18:54:25 - 7UT85 - 31 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-12-11 06:04:23 - 7UT85 - 67 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-08-22 23:02:37 - 6MD85 - 74 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-04-12 19:54:44 - 7UT85 - 52 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-11-08 23:49:50 - 7UT85 - 25 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-07-27 21:46:42 - 6MD85 - 72 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-04-29 04:36:30 - 7UT85 - 40 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-12-02 13:21:14 - 7UT85 - 74 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-01-08 18:52:54 - 7UT85 - 42 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-02-07 02:03:31 - 7UT85 - 58 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-01-02 08:53:12 - 7UT85 - 63 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-01-19 21:04:22 - 6MD85 - 21 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-03-25 23:51:56 - 6MD85 - 8 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-02-23 21:07:18 - 7UT85 - 37 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-05-23 15:27:45 - 7UT85 - 73 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-05-22 16:22:50 - 7UT85 - 85 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-02-28 17:28:34 - 7UT85 - 58 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-07-21 00:13:29 - 6MD85 - 61 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-04-05 21:47:55 - 6MD85 - 52 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-02-04 10:33:58 - 6MD85 - 70 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-02-12 07:18:46 - 7UT85 - 27 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-12-16 19:08:06 - 7UT85 - 18 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-23 04:20:39 - 6MD85 - 31 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-11-09 21:26:06 - 6MD85 - 29 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-04-09 07:59:10 - 6MD85 - 46 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-11-18 00:29:15 - 7UT85 - 15 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-18 08:33:05 - 6MD85 - 2 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-12-22 08:19:43 - 6MD85 - 50 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-06-22 18:39:49 - 7UT85 - 35 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-01-23 00:09:59 - 7UT85 - 46 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-08-20 01:37:24 - 7UT85 - 10 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-08-18 03:30:38 - 6MD85 - 40 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-03-18 09:08:28 - 7UT85 - 29 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-01-10 15:48:03 - 7UT85 - 61 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-02-01 17:22:12 - 7UT85 - 31 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-09-08 17:25:27 - 6MD85 - 87 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-05-21 15:44:01 - 7UT85 - 24 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-02-11 20:26:31 - 6MD85 - 92 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-11-14 05:43:23 - 6MD85 - 25 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-07-22 22:16:33 - 6MD85 - 51 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-12-13 09:26:55 - 6MD85 - 45 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-10-22 05:01:33 - 6MD85 - 11 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-07 00:33:33 - 6MD85 - 8 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-05-12 10:58:33 - 7UT85 - 41 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-09-29 02:46:47 - 7UT85 - 15 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-09-12 10:52:58 - 7UT85 - 13 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-05-05 21:36:56 - 6MD85 - 67 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-02-20 06:36:29 - 7UT85 - 11 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-02-22 03:20:21 - 7UT85 - 28 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-08-05 15:14:52 - 7UT85 - 13 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-07-28 04:03:14 - 6MD85 - 100 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-07-06 13:54:04 - 6MD85 - 67 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-07-06 02:46:41 - 7UT85 - 41 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-02-15 23:37:08 - 6MD85 - 91 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-11-03 08:30:16 - 6MD85 - 26 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-08-13 13:39:07 - 6MD85 - 100 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-06-19 08:07:11 - 6MD85 - 94 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-12-29 14:45:53 - 6MD85 - 22 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-10-05 07:23:19 - 6MD85 - 95 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-10-04 00:03:58 - 6MD85 - 97 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-08-05 09:10:37 - 6MD85 - 54 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-04-02 23:59:40 - 6MD85 - 41 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-09-28 19:53:25 - 7UT85 - 58 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-12-09 13:19:23 - 7UT85 - 70 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-08-11 07:40:17 - 7UT85 - 13 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-01-27 06:47:54 - 7UT85 - 12 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-03-11 15:31:50 - 7UT85 - 47 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-05-08 11:58:30 - 7UT85 - 24 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-07-13 23:18:10 - 6MD85 - 3 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-01-05 16:22:39 - 6MD85 - 69 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-06-13 21:13:11 - 7UT85 - 18 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-05-07 16:53:54 - 6MD85 - 83 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-08-29 15:15:19 - 6MD85 - 84 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-03-07 01:12:29 - 6MD85 - 78 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-09-14 07:02:39 - 7UT85 - 18 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-06-05 05:23:18 - 7UT85 - 50 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-01-26 15:45:41 - 7UT85 - 4 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-09-18 21:14:32 - 7UT85 - 32 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-06-10 19:50:09 - 7UT85 - 79 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-04-26 14:06:16 - 7UT85 - 83 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-10-13 22:17:24 - 7UT85 - 1 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-12-15 17:49:14 - 6MD85 - 68 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-03-13 03:48:41 - 7UT85 - 50 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-12-19 08:20:49 - 7UT85 - 83 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-09-25 08:00:22 - 7UT85 - 74 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-11-01 04:42:34 - 7UT85 - 97 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-02-03 13:06:34 - 7UT85 - 51 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-02-20 02:47:09 - 6MD85 - 84 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-02-21 06:46:07 - 6MD85 - 50 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-06-08 17:05:33 - 7UT85 - 15 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-02-02 16:55:35 - 6MD85 - 96 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-05-08 01:11:03 - 7UT85 - 21 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-12-11 13:54:16 - 7UT85 - 22 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-09-08 00:55:09 - 7UT85 - 31 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-08-21 16:26:20 - 6MD85 - 100 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-03-23 05:00:44 - 7UT85 - 73 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-01-21 03:12:18 - 7UT85 - 75 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-07-07 05:53:17 - 7UT85 - 62 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-06-14 02:50:56 - 7UT85 - 50 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-08-07 09:03:20 - 6MD85 - 4 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-03-21 14:42:17 - 7UT85 - 44 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-07-12 23:02:04 - 6MD85 - 66 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-05-25 10:42:24 - 6MD85 - 19 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-11-24 02:33:07 - 6MD85 - 55 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-02-17 22:15:49 - 7UT85 - 23 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-12-17 06:48:42 - 7UT85 - 79 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-04-29 12:41:43 - 6MD85 - 76 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-12-15 06:00:29 - 6MD85 - 54 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-07-02 05:39:28 - 6MD85 - 73 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-07-11 13:46:40 - 6MD85 - 34 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-08-23 01:16:48 - 6MD85 - 73 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-01-23 01:24:05 - 6MD85 - 15 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-06-08 21:07:49 - 6MD85 - 3 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-11-23 07:12:28 - 7UT85 - 84 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-11-29 12:27:59 - 6MD85 - 95 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-08-08 10:00:15 - 6MD85 - 21 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-08-18 10:40:48 - 7UT85 - 34 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-04-17 16:47:44 - 7UT85 - 44 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-05-24 05:21:20 - 7UT85 - 33 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-03-29 04:48:52 - 7UT85 - 86 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-12-12 00:45:30 - 6MD85 - 98 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-05-02 02:34:49 - 6MD85 - 50 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-02-28 20:44:48 - 7UT85 - 97 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-08-24 03:34:02 - 7UT85 - 76 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-11-20 15:50:56 - 7UT85 - 83 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-07-24 19:45:24 - 6MD85 - 47 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-08-25 09:56:57 - 6MD85 - 76 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-08-01 04:34:11 - 7UT85 - 2 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-01-09 13:58:03 - 7UT85 - 76 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-08-26 03:58:04 - 7UT85 - 21 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-03-07 18:39:09 - 7UT85 - 27 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-11-02 02:43:23 - 6MD85 - 94 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-11-16 12:12:45 - 6MD85 - 49 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-08-23 03:54:22 - 7UT85 - 72 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-06-21 21:41:42 - 6MD85 - 7 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-06-02 21:39:50 - 7UT85 - 62 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-06-26 13:58:55 - 7UT85 - 26 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-10-29 04:36:44 - 6MD85 - 73 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-11-08 01:20:08 - 6MD85 - 87 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-07-29 20:52:06 - 7UT85 - 59 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-01-20 12:46:26 - 6MD85 - 8 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-11-08 20:31:16 - 6MD85 - 47 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-04-22 23:59:57 - 7UT85 - 92 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-12-24 22:51:37 - 7UT85 - 69 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-01-05 21:34:42 - 6MD85 - 27 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-12-10 23:37:01 - 6MD85 - 91 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-04-05 21:07:29 - 6MD85 - 50 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-10-29 12:53:01 - 6MD85 - 13 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-04-09 22:06:49 - 7UT85 - 81 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-09-29 21:23:47 - 6MD85 - 96 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-04-13 06:22:50 - 7UT85 - 34 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-04-04 18:40:33 - 6MD85 - 91 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-12-27 06:03:12 - 7UT85 - 83 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-12-14 15:28:12 - 6MD85 - 86 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-06-07 11:36:23 - 7UT85 - 51 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-01-11 23:49:23 - 7UT85 - 16 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-09-08 22:53:51 - 6MD85 - 93 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-06-14 08:33:53 - 6MD85 - 46 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-05-15 13:58:21 - 6MD85 - 61 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-02-03 02:40:10 - 7UT85 - 91 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-02-15 22:00:34 - 7UT85 - 74 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-08-04 00:49:50 - 7UT85 - 35 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-10-27 15:17:45 - 6MD85 - 22 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-08-20 06:47:34 - 6MD85 - 55 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-08-21 10:28:16 - 6MD85 - 32 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-02-16 03:49:29 - 6MD85 - 91 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-11-20 22:03:31 - 7UT85 - 99 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-12-11 00:23:42 - 6MD85 - 40 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-11-05 04:16:59 - 7UT85 - 21 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-04-12 19:30:01 - 6MD85 - 53 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-03-06 04:31:26 - 6MD85 - 15 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-11 16:23:49 - 7UT85 - 97 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-05-25 05:17:04 - 7UT85 - 7 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-09-13 09:27:05 - 7UT85 - 18 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-09-10 21:23:13 - 7UT85 - 17 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-04-14 22:18:00 - 6MD85 - 81 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-04-27 08:30:56 - 7UT85 - 66 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-08-04 11:24:02 - 7UT85 - 54 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-08-25 08:29:29 - 6MD85 - 24 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-12-18 14:43:11 - 7UT85 - 84 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-12-22 06:10:03 - 6MD85 - 55 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-01-24 10:36:11 - 6MD85 - 32 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-01-22 08:30:45 - 7UT85 - 58 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-02-10 05:51:46 - 6MD85 - 92 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-05-28 17:31:24 - 6MD85 - 83 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-12-03 02:31:08 - 7UT85 - 20 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-02-06 04:11:58 - 6MD85 - 2 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-03-18 05:31:50 - 7UT85 - 85 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-06-04 18:09:58 - 7UT85 - 60 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-07-21 07:31:53 - 6MD85 - 68 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-04-02 22:13:55 - 7UT85 - 75 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-03-24 22:46:40 - 6MD85 - 82 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-02-22 13:28:01 - 7UT85 - 27 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-02-24 12:43:44 - 6MD85 - 57 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-12-03 01:20:44 - 6MD85 - 41 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-08-01 07:53:05 - 6MD85 - 77 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-09-28 22:26:44 - 6MD85 - 95 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-02-14 07:12:08 - 7UT85 - 47 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-07-13 13:19:53 - 7UT85 - 86 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-03-07 12:53:23 - 6MD85 - 78 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-07-20 20:45:46 - 6MD85 - 73 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-07-05 03:48:19 - 7UT85 - 83 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-06-26 22:54:09 - 7UT85 - 47 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-01-10 17:57:07 - 7UT85 - 26 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-08-11 15:40:06 - 7UT85 - 84 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-03-17 04:24:02 - 7UT85 - 17 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-07-06 02:31:16 - 7UT85 - 72 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-11-07 16:05:42 - 7UT85 - 1 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-11-11 05:59:19 - 6MD85 - 75 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-07-25 18:39:59 - 7UT85 - 40 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-02-09 03:56:57 - 7UT85 - 13 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-05-07 23:14:29 - 6MD85 - 89 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-05-16 18:16:35 - 7UT85 - 44 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-12-08 22:00:19 - 7UT85 - 22 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-02-17 13:01:40 - 7UT85 - 86 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-12-14 20:36:52 - 7UT85 - 33 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-09-03 08:31:40 - 7UT85 - 75 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-04-06 18:31:14 - 7UT85 - 16 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-07-23 01:03:44 - 7UT85 - 46 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-10-13 20:00:12 - 6MD85 - 90 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-10-24 04:37:56 - 7UT85 - 40 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-02-12 00:38:52 - 7UT85 - 41 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-04-10 18:49:44 - 6MD85 - 11 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-10-12 01:25:53 - 7UT85 - 67 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-10-24 02:37:14 - 7UT85 - 26 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-03-09 07:09:21 - 6MD85 - 6 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-12-16 07:10:15 - 7UT85 - 73 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-08-04 02:28:56 - 6MD85 - 46 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-04-20 18:59:38 - 6MD85 - 48 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-07-26 14:19:31 - 6MD85 - 20 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-07-03 10:38:43 - 7UT85 - 69 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-09-11 17:42:08 - 6MD85 - 35 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-08-15 04:22:43 - 6MD85 - 4 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-07-13 04:03:02 - 7UT85 - 31 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-02-22 15:23:18 - 7UT85 - 27 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-03-22 08:59:42 - 6MD85 - 68 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-11-25 02:11:47 - 6MD85 - 70 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-04-28 05:00:09 - 6MD85 - 62 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-09 15:55:32 - 7UT85 - 52 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-12-23 05:41:12 - 7UT85 - 59 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-02-23 12:50:07 - 7UT85 - 77 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-04-20 03:29:07 - 6MD85 - 59 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-06-29 06:01:41 - 6MD85 - 4 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-01-29 15:55:03 - 6MD85 - 44 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-03-28 17:36:09 - 7UT85 - 20 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-03-26 19:04:40 - 7UT85 - 20 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-02-08 20:14:51 - 6MD85 - 2 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-09-25 00:23:56 - 6MD85 - 60 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-06-25 03:58:50 - 7UT85 - 40 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-05-17 06:59:13 - 6MD85 - 78 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-04-01 16:05:38 - 6MD85 - 73 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-02-16 04:20:31 - 7UT85 - 99 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-12-04 02:33:15 - 6MD85 - 37 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-10-07 11:39:29 - 6MD85 - 44 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-09-12 18:16:30 - 6MD85 - 5 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-11-29 02:32:09 - 7UT85 - 76 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-06-24 21:39:47 - 7UT85 - 90 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-02-14 18:08:42 - 6MD85 - 40 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-07-14 02:29:45 - 6MD85 - 5 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-02-02 02:09:47 - 7UT85 - 74 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-03-06 22:21:33 - 6MD85 - 89 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-03-25 18:06:23 - 6MD85 - 6 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-10-01 12:47:54 - 7UT85 - 51 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-12-11 14:41:19 - 7UT85 - 19 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-07-09 13:01:08 - 6MD85 - 11 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-11-19 14:23:07 - 6MD85 - 1 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-11-16 14:41:52 - 6MD85 - 93 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-07-13 05:20:07 - 7UT85 - 70 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-11-27 22:14:33 - 6MD85 - 44 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-06-10 05:29:26 - 6MD85 - 94 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-11-24 12:57:19 - 7UT85 - 61 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-07-25 04:45:08 - 6MD85 - 59 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-01-18 06:25:47 - 7UT85 - 30 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-07-05 08:29:10 - 7UT85 - 17 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-09-21 03:16:27 - 7UT85 - 77 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-12-25 23:41:41 - 6MD85 - 57 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-06-08 19:38:20 - 6MD85 - 72 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-10-27 00:47:45 - 6MD85 - 67 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-02-08 04:33:31 - 6MD85 - 65 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-11-17 08:56:04 - 7UT85 - 7 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-05-08 11:16:51 - 6MD85 - 48 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-10-15 16:24:49 - 6MD85 - 41 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-06-07 18:24:34 - 7UT85 - 34 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-03-27 15:36:32 - 6MD85 - 76 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-05-11 06:01:29 - 6MD85 - 72 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-04-07 16:58:05 - 7UT85 - 47 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-11-21 22:53:55 - 6MD85 - 61 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-06-24 18:15:52 - 7UT85 - 55 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-09-08 07:02:17 - 7UT85 - 45 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-08-24 19:35:46 - 7UT85 - 17 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-04-15 10:53:06 - 7UT85 - 6 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-12-03 13:50:35 - 7UT85 - 35 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-08-19 17:21:23 - 7UT85 - 29 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-06-22 10:45:56 - 6MD85 - 56 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2023-12-29 04:39:04 - 7UT85 - 49 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2023-03-01 04:07:23 - 6MD85 - 82 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-12-21 21:51:51 - 7UT85 - 19 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-08-01 17:52:13 - 6MD85 - 96 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-07-09 13:50:28 - 6MD85 - 34 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-07-09 07:52:11 - 7UT85 - 13 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-03-23 04:17:10 - 6MD85 - 100 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-06-06 02:07:58 - 7UT85 - 73 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-10-11 17:14:32 - 6MD85 - 44 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-04-03 06:38:04 - 7UT85 - 83 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2023-08-22 02:29:24 - 7UT85 - 85 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-01-22 00:12:18 - 7UT85 - 92 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-09-21 08:28:33 - 6MD85 - 1 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2023-06-05 15:53:00 - 7UT85 - 69 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-10-10 00:31:10 - 6MD85 - 2 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-08-02 13:27:11 - 7UT85 - 90 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-04-17 22:36:47 - 6MD85 - 12 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2023-05-28 21:20:34 - 6MD85 - 13 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-01-16 14:25:22 - 7UT85 - 45 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-04-01 07:34:56 - 6MD85 - 83 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-12-09 23:37:15 - 7UT85 - 63 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2022-09-13 19:11:32 - 7UT85 - 46 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-09-20 00:21:31 - 7UT85 - 47 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-03-01 23:15:27 - 7UT85 - 32 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-11-25 14:26:26 - 7UT85 - 61 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-03-03 08:22:10 - 6MD85 - 28 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-05-23 07:01:51 - 6MD85 - 74 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-08-11 03:13:50 - 7UT85 - 2 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2023-11-08 23:59:39 - 6MD85 - 79 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-08-08 11:37:10 - 7UT85 - 67 - Point - Beklenenden daha düşük bir voltaj tespit etti ve birkaç dakika boyunca bu seviyede kaldı.
+2023-01-24 11:36:22 - 6MD85 - 96 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-01-21 22:43:25 - 6MD85 - 75 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2023-05-02 18:17:28 - 6MD85 - 15 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2023-06-03 18:11:08 - 7UT85 - 21 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-10-10 22:37:57 - 7UT85 - 51 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-09-05 22:17:10 - 6MD85 - 30 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-04-16 10:55:56 - 7UT85 - 1 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-09-11 15:12:36 - 6MD85 - 100 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2022-05-15 11:04:35 - 7UT85 - 17 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-03-11 05:08:53 - 6MD85 - 78 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-05-24 06:01:19 - 6MD85 - 53 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2022-03-12 11:42:42 - 7UT85 - 97 - Collective - Cihazlar beklenenden daha yüksek bir sıcaklık seviyesi tespit edildiği bir zamanda normalin dışında kaldı.
+2022-06-06 16:31:51 - 7UT85 - 62 - Point - Belirtilen zaman dilimi boyunca beklenen bir su seviyesinin altına düştü.
+2022-10-03 11:10:28 - 6MD85 - 30 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-05-13 07:26:31 - 7UT85 - 4 - Contextual - Beklenen yüksek nem oranının olduğu bir günde anormal bir yükseklik tespit etti.
+2022-07-02 06:18:34 - 7UT85 - 47 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2022-06-05 09:53:17 - 7UT85 - 28 - Collective - Cihazlar beklenenden daha yüksek bir nem oranı tespit edildiği bir zamanda beklenmeyen bir şekilde çalıştı.
+2023-06-23 02:50:46 - 6MD85 - 71 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.
+2023-03-10 02:52:27 - 6MD85 - 14 - Collective - Cihazlar belirli bir tarihte beklenenden daha düşük bir enerji tüketimi gösterdi.
+2022-02-08 23:10:52 - 7UT85 - 31 - Contextual - Belirtilen tarihte planlanan bir bakım çalışması sırasında beklenmeyen bir voltaj düşüklüğü tespit etti.
+2022-08-13 15:01:09 - 7UT85 - 69 - Contextual - Beklenen yüksek sıcaklık değerlerinin görüldüğü yaz aylarında normal çalışma koşullarının dışında kaldı.
+2022-07-15 03:45:24 - 7UT85 - 46 - Collective - Cihazlar beklenenden daha yüksek bir su seviyesi tespit edildiği bir zamanda anormal bir davranış gösterdi.
+2022-06-06 23:59:09 - 7UT85 - 56 - Point - Birkaç saat boyunca beklenen sıcaklık değerlerinin çok altında kaldı.
+2023-08-06 16:01:17 - 6MD85 - 60 - Contextual - Özel bir etkinlik nedeniyle belirtilen tarihte beklenenden daha yüksek bir su seviyesi tespit etti.
+2022-08-06 15:58:45 - 7UT85 - 48 - Point - Normal çalışma koşullarına rağmen beklenmedik bir yükseklik seviyesi tespit etti.

@@ -12,6 +12,13 @@ namespace AkilliSayac.Models
         [ForeignKey("AnomalyTypes")]
         public int AnomalyTypeId { get; set; }
         [Required]
+        [ForeignKey("Devices")]
+        public int DeviceId { get; set; }
+        [Required]
+        public string AnomalyMessage { get; set; } = string.Empty;
+        [Required]
+        public int AnomalyValue { get; set; }
+        [Required]
         [DataType(DataType.Date)]
         public DateTime AnomalyTime { get; set; }
     }

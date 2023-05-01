@@ -25,6 +25,10 @@ namespace AkilliSayac.Controllers
             ViewData["Logs"] = _db.Logs.ToList();
             ViewData["LogTypes"] = _db.LogTypes.ToList();
             ViewData["Devices"] = _db.Devices.ToList();
+            ViewData["Anomalies"] = _db.Anomalies.ToList();
+            ViewData["AnomalyTypes"] = _db.AnomalyTypes.ToList();
+            ViewData["Malwares"] = _db.Malwares.ToList();
+            ViewData["MalwareTypes"] = _db.MalwareTypes.ToList();
             return View();
         }
 

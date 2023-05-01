@@ -1,9 +1,41 @@
-﻿@{
+﻿@using System.Globalization;
+
+@{
     ViewData["Title"] = "Anasayfa";
 
     IEnumerable<Log> logs = ViewData["Logs"] as IEnumerable<Log>;
     IEnumerable<LogType> logTypes = ViewData["LogTypes"] as IEnumerable<LogType>;
     IEnumerable<Device> devices = ViewData["Devices"] as IEnumerable<Device>;
+    IEnumerable<Malware> malwares = ViewData["Malwares"] as IEnumerable<Malware>;
+    IEnumerable<MalwareType> malwareTypes = ViewData["MalwareTypes"] as IEnumerable<MalwareType>;
+    IEnumerable<Anomaly> anomalies = ViewData["Anomalies"] as IEnumerable<Anomaly>;
+    IEnumerable<AnomalyType> anomalyTypes = ViewData["AnomalyTypes"] as IEnumerable<AnomalyType>;
+
+    //malware variables
+    int wormId = malwareTypes.Where(x => x.MalwareTypeName == "Worm").FirstOrDefault().MalwareTypeId;
+    int wormCount = malwares.Where(x => x.MalwareTypeId == wormId).Count();
+    int rootkitId = malwareTypes.Where(x => x.MalwareTypeName == "Rootkit").FirstOrDefault().MalwareTypeId;
+    int rootkitCount = malwares.Where(x => x.MalwareTypeId == rootkitId).Count();
+    int spywareId = malwareTypes.Where(x => x.MalwareTypeName == "Spyware").FirstOrDefault().MalwareTypeId;
+    int spywareCount = malwares.Where(x => x.MalwareTypeId == spywareId).Count();
+    int adwareId = malwareTypes.Where(x => x.MalwareTypeName == "Adware").FirstOrDefault().MalwareTypeId;
+    int adwareCount = malwares.Where(x => x.MalwareTypeId == adwareId).Count();
+
+    //anomaly variables
+    List<Anomaly> points = new List<Anomaly>();
+    List<Anomaly> contextuals = new List<Anomaly>();
+    List<Anomaly> collectives = new List<Anomaly>();
+
+    int pointId = anomalyTypes.Where(x => x.AnomalyTypeName == "Point").FirstOrDefault().AnomalyTypeId;
+    int contextualId = anomalyTypes.Where(x => x.AnomalyTypeName == "Contextual").FirstOrDefault().AnomalyTypeId;
+    int collectiveId = anomalyTypes.Where(x => x.AnomalyTypeName == "Collective").FirstOrDefault().AnomalyTypeId;
+
+    foreach (var anomaly in anomalies)
+    {
+        if (anomaly.AnomalyTypeId == pointId) points.Add(anomaly);
+        else if (anomaly.AnomalyTypeId == contextualId) contextuals.Add(anomaly);
+        else if (anomaly.AnomalyTypeId == collectiveId) collectives.Add(anomaly);
+    }
 }
 
 <section class="section dashboard">
@@ -12,82 +44,94 @@
         <!-- Left side columns -->
         <div class="col-lg-8">
             <div class="row">
-                <!-- Reports -->
+
                 <div class="col-12">
                     <div class="card">
 
-                        <div class="filter">
-                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <li class="dropdown-header text-start">
-                                    <h6>Filter</h6>
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Today</a></li>
-                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                <li><a class="dropdown-item" href="#">This Year</a></li>
-                            </ul>
-                        </div>
-
                         <div class="card-body">
-                            <h5 class="card-title">Anomalies <span>/Today</span></h5>
+                            <h5 class="card-title">Anomalies</h5>
 
-                            <!-- Line Chart -->
-                            <div id="reportsChart"></div>
+                            <!-- ANOMALIES -->
+                            <div id="chart"></div>
 
                             <script>
-                                document.addEventListener("DOMContentLoaded", () => {
-                                    new ApexCharts(document.querySelector("#reportsChart"), {
-                                        series: [{
+                                var options = {
+                                    series: [
+                                        {
                                             name: 'Point',
-                                            data: [31, 40, 28, 51, 42, 82, 56],
-                                        }, {
+                                            data: [
+                                                @{
+                                                    foreach (var point in points)
+                                                    {
+                                                        @:["@point.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @point.AnomalyValue],
+                                                    }
+                                                }
+                                                                            ]
+                                        },
+                                        {
                                             name: 'Contextual',
-                                            data: [11, 32, 45, 32, 34, 52, 41]
-                                        }, {
+                                            data: [
+                                                @{
+                                                    foreach (var contextual in contextuals)
+                                                    {
+                                                        @:["@contextual.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @contextual.AnomalyValue],
+                                                    }
+                                                }
+                                                                            ]
+                                        },
+                                        {
                                             name: 'Collective',
-                                            data: [15, 11, 32, 18, 9, 24, 11]
-                                        }],
-                                        chart: {
-                                            height: 350,
-                                            type: 'area',
-                                            toolbar: {
-                                                show: false
-                                            },
-                                        },
-                                        markers: {
-                                            size: 4
-                                        },
-                                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
-                                        fill: {
-                                            type: "gradient",
-                                            gradient: {
-                                                shadeIntensity: 1,
-                                                opacityFrom: 0.3,
-                                                opacityTo: 0.4,
-                                                stops: [0, 90, 100]
+                                            data: [
+                                                @{
+                                                    foreach (var collective in collectives)
+                                                    {
+                                                        @:["@collective.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @collective.AnomalyValue],
+                                                    }
+                                                }
+                                                                            ]
+                                        }
+                                    ],
+                                    chart: {
+                                        height: 350,
+                                        type: 'scatter',
+                                        zoom: {
+                                            type: 'xy'
+                                        }
+                                    },
+                                    dataLabels: {
+                                        enabled: false
+                                    },
+                                    grid: {
+                                        xaxis: {
+                                            lines: {
+                                                show: true
                                             }
                                         },
-                                        dataLabels: {
-                                            enabled: false
+                                        yaxis: {
+                                            lines: {
+                                                show: true
+                                            }
                                         },
-                                        stroke: {
-                                            curve: 'smooth',
-                                            width: 2
-                                        },
-                                        xaxis: {
-                                            type: 'datetime',
-                                            categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                                        },
-                                        tooltip: {
-                                            x: {
-                                                format: 'dd/MM/yy HH:mm'
-                                            },
+                                    },
+                                    xaxis: {
+                                        type: 'datetime',
+                                    },
+                                    yaxis: {
+                                        max: 105
+                                    },
+                                    tooltip: {
+                                        enabled: true,
+                                        x: {
+                                            format: 'dd MMM yyyy HH:mm:ss'
                                         }
-                                    }).render();
-                                });
+                                    }
+                                };
+
+                                var chart = new ApexCharts(document.querySelector("#chart"), options);
+                                chart.render();
                             </script>
-                            <!-- End Line Chart -->
+
+                            <!-- End ANOMALIES-->
 
                         </div>
 
@@ -160,55 +204,55 @@
         <!-- Right side columns -->
         <div class="col-lg-4">
                 <div class="card">
-                    <div class="card-body pb-0">
-                        <h5 class="card-title">Malwares</h5>
-                        <!-- Pie Chart -->
-                        <div id="pieChart" style="min-height: 400px;" class="echart"></div>
+                <div class="card-body pb-0">
+                    <h5 class="card-title">Malwares</h5>
+                    <!-- MALWARES -->
+                    <div id="pieChart" style="min-height: 400px;" class="echart"></div>
 
-                        <script>
-                            document.addEventListener("DOMContentLoaded", () => {
-                                echarts.init(document.querySelector("#pieChart")).setOption({
-                                    tooltip: {
-                                        trigger: 'item'
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            echarts.init(document.querySelector("#pieChart")).setOption({
+                                tooltip: {
+                                    trigger: 'item'
+                                },
+                                legend: {
+                                    orient: 'horizontal',
+                                    left: 'center'
+                                },
+                                series: [{
+                                    name: 'Access From',
+                                    type: 'pie',
+                                    radius: '50%',
+                                    data: [{
+                                        value: @wormCount,
+                                        name: 'Worm'
                                     },
-                                    legend: {
-                                        orient: 'horizontal',
-                                        left: 'center'
+                                    {
+                                        value: @rootkitCount,
+                                        name: 'Rootkit'
                                     },
-                                    series: [{
-                                        name: 'Access From',
-                                        type: 'pie',
-                                        radius: '50%',
-                                        data: [{
-                                            value: 1048,
-                                            name: 'Worm'
-                                        },
-                                        {
-                                            value: 735,
-                                            name: 'Rootkit'
-                                        },
-                                        {
-                                            value: 580,
-                                            name: 'Spyware'
-                                        },
-                                        {
-                                            value: 484,
-                                            name: 'Adware'
-                                        },
-                                        ],
-                                        emphasis: {
-                                            itemStyle: {
-                                                shadowBlur: 10,
-                                                shadowOffsetX: 0,
-                                                shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                            }
+                                    {
+                                        value: @spywareCount,
+                                        name: 'Spyware'
+                                    },
+                                    {
+                                        value: @adwareCount,
+                                        name: 'Adware'
+                                    },
+                                    ],
+                                    emphasis: {
+                                        itemStyle: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
                                         }
-                                    }]
-                                });
+                                    }
+                                }]
                             });
-                        </script>
-                        <!-- End Pie Chart -->
-                    </div>
+                        });
+                    </script>
+                    <!-- End MALWARES -->
+                </div>
                 </div>
         </div>
     </div>

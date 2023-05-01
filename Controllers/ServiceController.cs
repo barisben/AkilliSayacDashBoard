@@ -19,8 +19,10 @@ namespace AkilliSayac.Controllers
             _db = db;
         }
 
-        public IActionResult Anomaly()
+        public async Task<IActionResult> AnomalyAsync()
         {
+            ViewData["Anomalies"] = await _db.Anomalies.ToListAsync();
+            ViewData["AnomalyTypes"] = await _db.AnomalyTypes.ToListAsync();
             return View();
         }
         public async Task<IActionResult> LogAsync()
@@ -30,8 +32,10 @@ namespace AkilliSayac.Controllers
             ViewData["Devices"] = await _db.Devices.ToListAsync();
             return View();
         }
-        public IActionResult Malware()
+        public async Task<IActionResult> MalwareAsync()
         {
+            ViewData["Malwares"] = await _db.Malwares.ToListAsync();
+            ViewData["MalwareTypes"] = await _db.MalwareTypes.ToListAsync();
             return View();
         }
     }

@@ -1,5 +1,25 @@
-﻿@{
+﻿@using System.Globalization;
+
+@{
     ViewData["Title"] = "Anomalies";
+
+    IEnumerable<Anomaly> anomalies = ViewData["Anomalies"] as IEnumerable<Anomaly>;
+    IEnumerable<AnomalyType> anomalyTypes = ViewData["AnomalyTypes"] as IEnumerable<AnomalyType>;
+
+    List<Anomaly> points = new List<Anomaly>();
+    List<Anomaly> contextuals = new List<Anomaly>();
+    List<Anomaly> collectives = new List<Anomaly>();
+
+    int pointId = anomalyTypes.Where(x => x.AnomalyTypeName == "Point").FirstOrDefault().AnomalyTypeId;
+    int contextualId = anomalyTypes.Where(x => x.AnomalyTypeName == "Contextual").FirstOrDefault().AnomalyTypeId;
+    int collectiveId = anomalyTypes.Where(x => x.AnomalyTypeName == "Collective").FirstOrDefault().AnomalyTypeId;
+
+    foreach (var anomaly in anomalies)
+    {
+        if (anomaly.AnomalyTypeId == pointId) points.Add(anomaly);
+        else if (anomaly.AnomalyTypeId == contextualId) contextuals.Add(anomaly);
+        else if (anomaly.AnomalyTypeId == collectiveId) collectives.Add(anomaly);
+    }
 }
 
 <section class="section dashboard">
@@ -12,77 +32,86 @@
                 <div class="col-12">
                     <div class="card">
 
-                        <div class="filter">
-                            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <li class="dropdown-header text-start">
-                                    <h6>Filter</h6>
-                                </li>
-
-                                <li><a class="dropdown-item" href="#">Today</a></li>
-                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                <li><a class="dropdown-item" href="#">This Year</a></li>
-                            </ul>
-                        </div>
-
                         <div class="card-body">
-                            <h5 class="card-title">Anomalies <span>/Today</span></h5>
+                            <h5 class="card-title">Anomalies</h5>
 
                             <!-- Line Chart -->
-                            <div id="reportsChart"></div>
+                            <div id="chart"></div>
 
                             <script>
-                                document.addEventListener("DOMContentLoaded", () => {
-                                    new ApexCharts(document.querySelector("#reportsChart"), {
-                                        series: [{
-                                            name: 'Point',
-                                            data: [31, 40, 28, 51, 42, 82, 56],
-                                        }, {
-                                            name: 'Contextual',
-                                            data: [11, 32, 45, 32, 34, 52, 41]
-                                        }, {
-                                            name: 'Collective',
-                                            data: [15, 11, 32, 18, 9, 24, 11]
-                                        }],
-                                        chart: {
-                                            height: 350,
-                                            type: 'area',
-                                            toolbar: {
-                                                show: false
-                                            },
-                                        },
-                                        markers: {
-                                            size: 4
-                                        },
-                                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
-                                        fill: {
-                                            type: "gradient",
-                                            gradient: {
-                                                shadeIntensity: 1,
-                                                opacityFrom: 0.3,
-                                                opacityTo: 0.4,
-                                                stops: [0, 90, 100]
+                                var options = {
+                                    series: [
+                                    {
+                                        name: 'Point',
+                                        data: [
+                                            @{
+                                                foreach(var point in points){
+                                                    @:["@point.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @point.AnomalyValue],
+                                                }
+                                            }
+                                            ]
+                                    },
+                                    {
+                                        name: 'Contextual',
+                                        data: [
+                                            @{
+                                                foreach(var contextual in contextuals){
+                                                    @:["@contextual.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @contextual.AnomalyValue],
+                                                }
+                                            }
+                                            ]
+                                    },
+                                    {
+                                        name: 'Collective',
+                                        data: [
+                                            @{
+                                                foreach(var collective in collectives){
+                                                    @:["@collective.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @collective.AnomalyValue],
+                                                }
+                                            }
+                                            ]
+                                    }
+                                    ],
+                                    chart: {
+                                        height: 350,
+                                        type: 'scatter',
+                                        zoom: {
+                                            type: 'xy'
+                                        }
+                                    },
+                                    dataLabels: {
+                                        enabled: false
+                                    },
+                                    grid: {
+                                        xaxis: {
+                                            lines: {
+                                                show: true
                                             }
                                         },
-                                        dataLabels: {
-                                            enabled: false
+                                        yaxis: {
+                                            lines: {
+                                                show: true
+                                            }
                                         },
-                                        stroke: {
-                                            curve: 'smooth',
-                                            width: 2
-                                        },
-                                        xaxis: {
-                                            type: 'datetime',
-                                            categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-                                        },
-                                        tooltip: {
-                                            x: {
-                                                format: 'dd/MM/yy HH:mm'
-                                            },
+                                    },
+                                    xaxis: {
+                                        type: 'datetime',
+                                    },
+                                    yaxis: {
+                                        max: 105
+                                    },
+                                    tooltip: {
+                                        enabled: true,
+                                        x: {
+                                            format: 'dd MMM yyyy HH:mm:ss'
                                         }
-                                    }).render();
-                                });
+                                    }
+                                };
+
+                                var chart = new ApexCharts(document.querySelector("#chart"), options);
+                                chart.render();
                             </script>
+
                             <!-- End Line Chart -->
 
                         </div>

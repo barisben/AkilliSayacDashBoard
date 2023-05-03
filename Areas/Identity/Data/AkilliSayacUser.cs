@@ -14,4 +14,7 @@ public class AkilliSayacUser : IdentityUser
     [Required]
     [DataType(DataType.Date)]
     public DateTime LastPasswordChangedDate { get; set; }
+    [Required]
+    [DataType(DataType.Date)]
+    public DateTime LastLoginDate { get; set; }
 }

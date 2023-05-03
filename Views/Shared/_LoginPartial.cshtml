@@ -4,18 +4,23 @@
 @inject SignInManager<AkilliSayacUser> SignInManager
 @inject UserManager<AkilliSayacUser> UserManager
 
+@{
+    var user = UserManager.Users.Where(x => x.UserName == UserManager.GetUserName(User)).FirstOrDefault();
+}
+
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item dropdown pe-3">
 
         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="~/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">@UserManager.GetUserName(User)</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2">@user.FirstName @user.LastName</span>
         </a><!-- End Profile Image Icon -->
 
         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-                <h6>@UserManager.GetUserName(User)</h6>
+                <h6>@user.FirstName @user.LastName</h6>
+                <span>Son Başarılı Giriş Tarihi: @user.LastLoginDate.ToString("dd.MM.yyyy HH:mm:ss")</span>
             </li>
             <li>
                 <hr class="dropdown-divider">

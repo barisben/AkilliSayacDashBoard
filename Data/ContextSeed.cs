@@ -167,6 +167,7 @@ namespace AkilliSayac.Data
                     UserName = "baris@sau.edu.tr",
                     Email = "baris@sau.edu.tr",
                     RoleName = "SuperAdmin",
+                    LastPasswordChangedDate = DateTime.Now,
                     EmailConfirmed = true
                 };
                 var result = userManager.CreateAsync(user, "P@ssword1").Result;

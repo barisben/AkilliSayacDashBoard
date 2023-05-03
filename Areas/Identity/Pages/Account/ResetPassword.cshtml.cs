@@ -102,6 +102,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
                 return RedirectToPage("./ResetPasswordConfirmation");
             }
 
+            user.LastPasswordChangedDate = DateTime.Now;
             var result = await _userManager.ResetPasswordAsync(user, Input.Code, Input.Password);
             if (result.Succeeded)
             {

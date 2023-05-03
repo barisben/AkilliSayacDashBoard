@@ -51,6 +51,13 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.HttpOnly = true;
 });
 
+builder.Services.AddScoped<ChangePasswordResourceFilter>();
+
+builder.Services.AddMvc(o =>
+{
+    o.Filters.Add(typeof(ChangePasswordResourceFilter));
+});
+
 var app = builder.Build();
 
 

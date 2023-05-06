@@ -46,7 +46,11 @@
                                         data: [
                                             @{
                                                 foreach(var point in points){
-                                                    @:["@point.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @point.AnomalyValue],
+                                                    @:{
+                                                        @:x:  "@point.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
+                                                        @:y: @point.AnomalyValue,
+                                                        @:message: "@point.AnomalyMessage"
+                                                    @:},
                                                 }
                                             }
                                             ]
@@ -56,7 +60,11 @@
                                         data: [
                                             @{
                                                 foreach(var contextual in contextuals){
-                                                    @:["@contextual.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @contextual.AnomalyValue],
+                                                    @:{
+                                                        @:x:  "@contextual.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
+                                                        @:y: @contextual.AnomalyValue,
+                                                        @:message: "@contextual.AnomalyMessage"
+                                                    @:},
                                                 }
                                             }
                                             ]
@@ -66,7 +74,11 @@
                                         data: [
                                             @{
                                                 foreach(var collective in collectives){
-                                                    @:["@collective.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))", @collective.AnomalyValue],
+                                                    @:{
+                                                        @:x:  "@collective.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
+                                                        @:y: @collective.AnomalyValue,
+                                                        @:message: "@collective.AnomalyMessage"
+                                                    @:},
                                                 }
                                             }
                                             ]
@@ -95,7 +107,7 @@
                                         },
                                     },
                                     xaxis: {
-                                        type: 'datetime',
+                                        type: 'datetime'
                                     },
                                     yaxis: {
                                         max: 105
@@ -104,6 +116,16 @@
                                         enabled: true,
                                         x: {
                                             format: 'dd MMM yyyy HH:mm:ss'
+                                        },
+                                        custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                                            var data = w.globals.initialSeries[seriesIndex].data[dataPointIndex];
+
+                                            return '</br>' +
+                                                '<ul>' +
+                                                '<li><b>Date</b>: ' + data.x + '</li>' +
+                                                '<li><b>Value</b>: ' + data.y + '</li>' +
+                                                '<li><b>Message</b>: \'' + data.message + '\'</li>' +
+                                                '</ul>';
                                         }
                                     }
                                 };

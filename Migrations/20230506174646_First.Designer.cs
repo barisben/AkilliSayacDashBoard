@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AkilliSayac.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230428172958_First")]
+    [Migration("20230506174646_First")]
     partial class First
     {
         /// <inheritdoc />
@@ -47,8 +47,14 @@ namespace AkilliSayac.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("LastLoginDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("LastPasswordChangedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");

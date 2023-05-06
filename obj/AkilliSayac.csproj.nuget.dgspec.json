@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {}
+    "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {
+    "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
+        "projectUniqueName": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
         "projectName": "AkilliSayac",
-        "projectPath": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
-        "packagesPath": "C:\\Users\\Baris\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\obj\\",
+        "projectPath": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
+        "packagesPath": "C:\\Users\\Baris Yilmaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Baris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Baris Yilmaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,33 +46,29 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.AspNetCore.Session": {
-              "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.6, )"
             }
           },
           "imports": [

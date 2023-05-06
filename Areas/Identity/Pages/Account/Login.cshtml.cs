@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using AkilliSayac.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace AkilliSayac.Areas.Identity.Pages.Account
 {
@@ -110,13 +111,14 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                var user = _signInManager.UserManager.Users.Where(x => x.Email == Input.Email).FirstOrDefault();
-                if(user != null) { user.LastLoginDate = DateTime.Now; }
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: true);
                 if (result.Succeeded)
                 {
+                    var user = _signInManager.UserManager.Users.Where(x => x.Email == Input.Email).FirstOrDefault();
+                    user.LastLoginDate = DateTime.Now;
+                    await _signInManager.UserManager.UpdateAsync(user);
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }

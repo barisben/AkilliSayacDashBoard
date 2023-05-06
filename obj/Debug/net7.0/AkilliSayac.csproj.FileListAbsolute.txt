@@ -869,3 +869,4 @@ D:\Users\Baris\Desktop\GitHub\AkilliSayac\AkilliSayac\obj\Debug\net7.0\AkilliSay
 D:\Users\Baris\Desktop\GitHub\AkilliSayac\AkilliSayac\obj\Debug\net7.0\AkilliSayac.genruntimeconfig.cache
 D:\Users\Baris\Desktop\GitHub\AkilliSayac\AkilliSayac\obj\Debug\net7.0\ref\AkilliSayac.dll
 D:\Users\Baris\Desktop\GitHub\AkilliSayac\AkilliSayac\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Baris Yilmaz\source\repos\AkilliSayac\AkilliSayac\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

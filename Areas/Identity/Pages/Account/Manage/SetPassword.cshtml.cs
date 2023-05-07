@@ -96,7 +96,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
-            user.LastPasswordChangedDate = DateTime.Now;
             var addPasswordResult = await _userManager.AddPasswordAsync(user, Input.NewPassword);
             if (!addPasswordResult.Succeeded)
             {
@@ -106,6 +105,8 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
                 }
                 return Page();
             }
+            user.LastPasswordChangedDate = DateTime.Now;
+            await _userManager.UpdateAsync(user);
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your password has been set.";

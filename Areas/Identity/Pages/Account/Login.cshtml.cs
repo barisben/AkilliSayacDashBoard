@@ -16,6 +16,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using AkilliSayac.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore.Storage;
+using AkilliSayac.Models;
+using AkilliSayac.Data;
 
 namespace AkilliSayac.Areas.Identity.Pages.Account
 {
@@ -23,11 +25,13 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly ApplicationDbContext _db;
 
-        public LoginModel(SignInManager<AkilliSayacUser> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<AkilliSayacUser> signInManager, ILogger<LoginModel> logger, ApplicationDbContext db)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _db = db;
         }
 
         /// <summary>
@@ -114,11 +118,23 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: true);
+                var user = _signInManager.UserManager.Users.Where(x => x.Email == Input.Email).FirstOrDefault();
+
+                Log log = new Log();
+                log.LogTime = DateTime.Now;
+                log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
+                log.UserId = user.Id;
+
                 if (result.Succeeded)
                 {
-                    var user = _signInManager.UserManager.Users.Where(x => x.Email == Input.Email).FirstOrDefault();
                     user.LastLoginDate = DateTime.Now;
                     await _signInManager.UserManager.UpdateAsync(user);
+
+                    log.LogMessage = "Kullanıcı, başarılı giriş yaptı.";
+                    
+                    _db.Logs.Add(log);
+                    _db.SaveChanges();
+
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }
@@ -128,11 +144,21 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
                 }
                 if (result.IsLockedOut)
                 {
+                    log.LogMessage = "Kullanıcının hesabı bloke oldu.";
+
+                    _db.Logs.Add(log);
+                    _db.SaveChanges();
+
                     _logger.LogWarning("User account locked out.");
                     return RedirectToPage("./Lockout");
                 }
                 else
                 {
+                    log.LogMessage = "Kullanıcı, hatalı giriş denedi.";
+
+                    _db.Logs.Add(log);
+                    _db.SaveChanges();
+
                     ModelState.AddModelError(string.Empty, "E-Mail veya Şifre Yanlış");
                     return Page();
                 }

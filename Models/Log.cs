@@ -12,7 +12,10 @@ namespace AkilliSayac.Models
         public int LogTypeId { get; set; }
         [Required]
         [ForeignKey("Devices")]
-        public int DeviceId { get; set; }
+        public int DeviceId { get; set; } = 0;
+        [Required]
+        [ForeignKey("AspNetUsers")]
+        public string UserId { get; set; } = string.Empty;
         [Required]
         public string LogMessage { get; set; } = string.Empty;
         [Required]

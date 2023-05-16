@@ -36,6 +36,11 @@
         else if (anomaly.AnomalyTypeId == contextualId) contextuals.Add(anomaly);
         else if (anomaly.AnomalyTypeId == collectiveId) collectives.Add(anomaly);
     }
+
+    var userLogTypeId = logTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
+    var databaseLogTypeId = logTypes.Where(x => x.LogTypeName == "Database").FirstOrDefault().LogTypeId;
+    var deviceLogs = logs.Where(x => x.LogTypeId != userLogTypeId && x.LogTypeId != databaseLogTypeId).ToList();
+    var userLogs = logs.Where(x => x.LogTypeId == userLogTypeId).ToList();
 }
 
 <section class="section dashboard">
@@ -181,7 +186,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (Log log in logs)
+                                    @foreach (Log log in deviceLogs)
                                     {
                                         <tr>
                                             @{

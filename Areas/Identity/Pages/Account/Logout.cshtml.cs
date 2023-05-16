@@ -5,6 +5,7 @@
 using System;
 using System.Threading.Tasks;
 using AkilliSayac.Areas.Identity.Data;
+using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

@@ -12,6 +12,8 @@ using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
 using AkilliSayac.Areas.Identity.Data;
+using AkilliSayac.Data;
+using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -33,6 +35,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<AkilliSayacUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly ApplicationDbContext _db;
         public List<SelectListItem> Roles { get; }
         
 
@@ -42,7 +45,8 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             IUserStore<AkilliSayacUser> userStore,
             SignInManager<AkilliSayacUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            ApplicationDbContext db)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -50,6 +54,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _db = db;
 
             Roles = new List<SelectListItem>
             {
@@ -151,6 +156,15 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
+                    Log log = new Log();
+                    log.LogTime = DateTime.Now;
+                    log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
+                    log.UserId = user.Id;
+                    log.LogMessage = "Kullanıcının hesabı oluşturuldu.";
+
+                    _db.Logs.Add(log);
+                    _db.SaveChanges();
+
                     _logger.LogInformation("User created a new account with password.");
 
                     await _userManager.AddToRoleAsync(user, Input.RoleName);

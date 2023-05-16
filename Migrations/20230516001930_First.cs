@@ -106,6 +106,7 @@ namespace AkilliSayac.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LogTypeId = table.Column<int>(type: "int", nullable: false),
                     DeviceId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

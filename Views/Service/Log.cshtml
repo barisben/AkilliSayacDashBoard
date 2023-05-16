@@ -4,6 +4,11 @@
     IEnumerable<Log> logs = ViewData["Logs"] as IEnumerable<Log>;
     IEnumerable<LogType> logTypes = ViewData["LogTypes"] as IEnumerable<LogType>;
     IEnumerable<Device> devices = ViewData["Devices"] as IEnumerable<Device>;
+
+    var userLogTypeId = logTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
+    var databaseLogTypeId = logTypes.Where(x => x.LogTypeName == "Database").FirstOrDefault().LogTypeId;
+    var deviceLogs = logs.Where(x => x.LogTypeId != userLogTypeId && x.LogTypeId != databaseLogTypeId).ToList();
+    var userLogs = logs.Where(x => x.LogTypeId == userLogTypeId).ToList();
 }
 
 <section class="section">
@@ -12,7 +17,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Loglar</h5>
+                    <h5 class="card-title">Cihaz Logları</h5>
                     
 
                     <table class="table datatable">
@@ -26,7 +31,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (Log log in logs)
+                            @foreach (Log log in deviceLogs)
                             {
                                 <tr>
                                     @{
@@ -52,6 +57,53 @@
                                         }
 
                                     }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Kullanıcı Logları</h5>
+
+
+                    <table class="table datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tarih</th>
+                                <th scope="col">Kullanıcı</th>
+                                <th scope="col">Mesaj</th>
+                                <th scope="col">Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (Log log in userLogs)
+                            {
+                                <tr>
+                                    <td>@log.LogTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                    <td>@log.UserId</td>
+                                    <td>@log.LogMessage</td>
+                                    <td>
+                                        @{
+                                            if (log.LogMessage == "Kullanıcının hesabı yönetici tarafından silindi." || log.LogMessage == "Kullanıcının blokesi yönetici tarafından kaldırıldı." || log.LogMessage == "Kullanıcı yönetici tarafından bloklandı.")
+                                            {
+                                                <span class="badge bg-warning text-dark">Yönetim</span>
+                                            }
+                                            else if (log.LogMessage == "Kullanıcı, hatalı giriş denedi." || log.LogMessage == "Kullanıcının hesabı bloke oldu.")
+                                            {
+                                                <span class="badge bg-danger">Uyarı</span>
+                                            }
+                                            else if (log.LogMessage == "Kullanıcı, başarılı giriş yaptı." || log.LogMessage == "Kullanıcı, parolasını değiştirdi." || log.LogMessage == "Kullanıcının hesabı oluşturuldu.")
+                                            {
+                                                <span class="badge bg-success">Başarılı</span>
+                                            }
+
+                                        }
                                     </td>
                                 </tr>
                             }

@@ -6,6 +6,8 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using AkilliSayac.Areas.Identity.Data;
+using AkilliSayac.Data;
+using AkilliSayac.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -18,15 +20,18 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly ILogger<ChangePasswordModel> _logger;
+        private readonly ApplicationDbContext _db;
 
         public ChangePasswordModel(
             UserManager<AkilliSayacUser> userManager,
             SignInManager<AkilliSayacUser> signInManager,
-            ILogger<ChangePasswordModel> logger)
+            ILogger<ChangePasswordModel> logger,
+            ApplicationDbContext db)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _db = db;
         }
 
         /// <summary>
@@ -122,8 +127,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             user.LastPasswordChangedDate = DateTime.Now;
             await _userManager.UpdateAsync(user);
 
+            Log log = new Log();
+            log.LogTime = DateTime.Now;
+            log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
+            log.UserId = user.Id;
+            log.LogMessage = "Kullanıcı, parolasını değiştirdi.";
+
+            _db.Logs.Add(log);
+            _db.SaveChanges();
+
             await _signInManager.RefreshSignInAsync(user);
-            _logger.LogInformation("Kullanıcı şifresi değiştirildi.");
+            _logger.LogInformation("Kullanıcı parolası değiştirildi.");
             StatusMessage = "Şifre değiştirildi.";
 
             return RedirectToPage();

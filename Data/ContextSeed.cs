@@ -132,6 +132,18 @@ namespace AkilliSayac.Data
                     LogMessageNumber = 4738
                 };
                 db.LogTypes.Add(logType4);
+                LogType logType5 = new LogType
+                {
+                    LogTypeName = "User",
+                    LogMessageNumber = null
+                };
+                db.LogTypes.Add(logType5);
+                LogType logType6= new LogType
+                {
+                    LogTypeName = "Database",
+                    LogMessageNumber = null
+                };
+                db.LogTypes.Add(logType6);
             }
             db.SaveChanges();
         }

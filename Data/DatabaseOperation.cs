@@ -1,4 +1,6 @@
-﻿namespace AkilliSayac.Data
+﻿using AkilliSayac.Interfaces;
+
+namespace AkilliSayac.Data
 {
     public class DatabaseOperation : IDatabaseOperation
     {

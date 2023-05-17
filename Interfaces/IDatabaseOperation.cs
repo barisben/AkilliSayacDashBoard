@@ -1,4 +1,4 @@
-﻿namespace AkilliSayac.Data
+﻿namespace AkilliSayac.Interfaces
 {
     public interface IDatabaseOperation
     {

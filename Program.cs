@@ -87,9 +87,9 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetService(typeof(ApplicationDbContext));
 
     ContextSeed.Seed((UserManager<AkilliSayacUser>)userManager, (RoleManager<IdentityRole>)roleManager, (ApplicationDbContext)db);
-    LogOperation.GetAllLogsFromFiles((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
-    AnomalyOperation.GetAnomaliesFromFile((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
-    MalwareOperation.GetMalwaresFromFile((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
+    LogOperation.GetLogsFromFile((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
+    AnomalyOperation.GetLogsFromFile((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
+    MalwareOperation.GetLogsFromFile((ApplicationDbContext)db, (IWebHostEnvironment)hostingEnvironment);
 }
 
 app.MapControllerRoute(

@@ -1,4 +1,5 @@
 ﻿using AkilliSayac.Data;
+using AkilliSayac.Interfaces;
 using AkilliSayac.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

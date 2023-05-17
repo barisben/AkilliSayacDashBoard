@@ -1,6 +1,7 @@
 ﻿using AkilliSayac.Areas.Identity.Data;
 using AkilliSayac.Data;
 using AkilliSayac.Database;
+using AkilliSayac.Interfaces;
 using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -11,7 +12,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.Xml;
 using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AkilliSayac.Controllers
 {

@@ -1,5 +1,6 @@
 ﻿using AkilliSayac.Areas.Identity.Data;
 using AkilliSayac.Data;
+using AkilliSayac.Interfaces;
 using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -15,10 +16,10 @@ using System.Text.RegularExpressions;
 namespace AkilliSayac.Data
 {
     [Authorize]
-    public static class AnomalyOperation
+    public class AnomalyOperation : ILogOperation
     {
-        public static void GetAnomaliesFromFile(ApplicationDbContext db, IWebHostEnvironment hostingEnvironment)
-        {   
+        public static void GetLogsFromFile(ApplicationDbContext db, IWebHostEnvironment hostingEnvironment)
+        {
             if (db.Anomalies.Count() == 0)
             {
                 string filePath = Path.Combine(hostingEnvironment.WebRootPath, @"logs/") + "randanomalylog.txt";

@@ -1,5 +1,6 @@
 ﻿using AkilliSayac.Areas.Identity.Data;
 using AkilliSayac.Data;
+using AkilliSayac.Database;
 using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.Xml;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -19,12 +21,14 @@ namespace AkilliSayac.Controllers
         private UserManager<AkilliSayacUser> userManager;
         private RoleManager<IdentityRole> roleManager;
         private readonly ApplicationDbContext _db;
+        private readonly IDatabaseOperation database;
 
         public SuperAdminController(RoleManager<IdentityRole> roleManager, UserManager<AkilliSayacUser> userManager, ApplicationDbContext db)
         {
             this.roleManager = roleManager;
             this.userManager = userManager;
             this._db = db;
+            this.database = new DatabaseOperation(new SqlServerDb(_db));
         }
 
         [HttpPost]
@@ -106,25 +110,12 @@ namespace AkilliSayac.Controllers
             try
             {
                 string databaseName = _db.Database.GetDbConnection().Database;
-                string backupFileName = Path.Combine(Path.GetTempPath(), $"{databaseName}_backup_{DateTime.Now:yyyyMMddHHmmss}.bak");
 
-                _db.Database.ExecuteSqlRaw($"BACKUP DATABASE {_db.Database.GetDbConnection().Database} TO DISK = '{backupFileName}'");
+                //for Sql Server
+                byte[] backUpFileBytes = database.DatabaseBackUp(id);
+                string downloadFileName = $"{databaseName}_backup_{DateTime.Now:ddMMyyyyHHmmss}.bak";
 
-                byte[] fileBytes = System.IO.File.ReadAllBytes(backupFileName);
-                System.IO.File.Delete(backupFileName);
-
-                string downloadFileName = $"{databaseName}_backup_{DateTime.Now:yyyyMMddHHmmss}.bak";
-
-                Log log = new Log();
-                log.LogMessage = "Veritabanı yedeği indirildi";
-                log.LogTime = DateTime.Now;
-                log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "Database").FirstOrDefault().LogTypeId;
-                log.UserId = id;
-
-                _db.Logs.Add(log);
-                _db.SaveChanges();
-
-                return File(fileBytes, "application/octet-stream", downloadFileName);
+                return File(backUpFileBytes, "application/octet-stream", downloadFileName);
             }
             catch (Exception ex)
             {

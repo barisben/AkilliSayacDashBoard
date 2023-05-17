@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AkilliSayac.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230516001930_First")]
+    [Migration("20230517163106_First")]
     partial class First
     {
         /// <inheritdoc />

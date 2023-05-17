@@ -1,9 +1,12 @@
-﻿@{
+﻿@using AkilliSayac.Areas.Identity.Data;
+
+@{
     ViewData["Title"] = "Loglar";
 
     IEnumerable<Log> logs = ViewData["Logs"] as IEnumerable<Log>;
     IEnumerable<LogType> logTypes = ViewData["LogTypes"] as IEnumerable<LogType>;
     IEnumerable<Device> devices = ViewData["Devices"] as IEnumerable<Device>;
+    IEnumerable<AkilliSayacUser> users = ViewData["Users"] as IEnumerable<AkilliSayacUser>;
 
     var userLogTypeId = logTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
     var databaseLogTypeId = logTypes.Where(x => x.LogTypeName == "Database").FirstOrDefault().LogTypeId;
@@ -72,7 +75,7 @@
                             {
                                 <tr>
                                     <td>@log.LogTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
-                                    <td>@log.UserId</td>
+                                    <td>@users.Where(x => x.Id == log.UserId).FirstOrDefault().Email</td>
                                     <td>@log.LogMessage</td>
                                     <td>
                                         <span class="@log.LogStatusBadge">@log.LogStatus</span>

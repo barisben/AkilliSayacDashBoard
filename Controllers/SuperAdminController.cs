@@ -107,8 +107,9 @@ namespace AkilliSayac.Controllers
         public IActionResult DatabaseActions()
         {
             int databaseLogsTypeId = _db.LogTypes.Where(x => x.LogTypeName == "Database").FirstOrDefault().LogTypeId;
-            var databaseLogs = _db.Logs.Where(x => x.LogTypeId == databaseLogsTypeId).ToList();
-            return View(databaseLogs);
+            ViewData["DatabaseLogs"] = _db.Logs.Where(x => x.LogTypeId == databaseLogsTypeId).ToList();
+            ViewData["Users"] = userManager.Users.ToList();
+            return View();
         }
 
         [HttpPost]

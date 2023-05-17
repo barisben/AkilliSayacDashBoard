@@ -197,21 +197,7 @@
                                             <td>@logType.LogTypeName</td>
                                             <td>@log.LogMessage</td>
                                             <td>
-                                                @{
-                                                    if (logType.LogTypeId == 1)
-                                                    {
-                                                        <span class="badge bg-warning text-dark">Sistem</span>
-                                                    }
-                                                    else if (logType.LogTypeId == 2 || logType.LogTypeId == 4 || logType.LogTypeId == 5)
-                                                    {
-                                                        <span class="badge bg-danger">Arıza</span>
-                                                    }
-                                                    else if (logType.LogTypeId == 3)
-                                                    {
-                                                        <span class="badge bg-success">Başarılı</span>
-                                                    }
-
-                                                }
+                                                <span class="@log.LogStatusBadge">@log.LogStatus</span>
                                             </td>
                                         </tr>
                                     }

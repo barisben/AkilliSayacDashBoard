@@ -21,6 +21,7 @@
                     <th>Soyisim</th>
                     <th>Email</th>
                     <th>Kullanıcı Rolü</th>
+                    <th>Son Giriş Tarihi</th>
                     <th></th>
                 </tr>
             </thead>
@@ -64,8 +65,8 @@
                                 }
                             }
                         </td>
+                        <td>@user.LastLoginDate.ToString("dd.MM.yyyy HH:mm:ss")</td>
                         <td>
-                            @*<a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a> |*@
                             @{
                                 if(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value != @user.Id)
                                 {

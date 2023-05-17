@@ -1,5 +1,7 @@
-﻿using AkilliSayac.Data;
+﻿using AkilliSayac.Areas.Identity.Data;
+using AkilliSayac.Data;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -13,10 +15,12 @@ namespace AkilliSayac.Controllers
     public class ServiceController : Controller
     {
         private readonly ApplicationDbContext _db;
+        private UserManager<AkilliSayacUser> userManager;
 
-        public ServiceController(ApplicationDbContext db)
+        public ServiceController(ApplicationDbContext db, UserManager<AkilliSayacUser> userManager)
         {
             _db = db;
+            this.userManager = userManager;
         }
 
         public async Task<IActionResult> AnomalyAsync()
@@ -30,6 +34,7 @@ namespace AkilliSayac.Controllers
             ViewData["Logs"] = await _db.Logs.ToListAsync();
             ViewData["LogTypes"] = await _db.LogTypes.ToListAsync();
             ViewData["Devices"] = await _db.Devices.ToListAsync();
+            ViewData["Users"] = await userManager.Users.ToListAsync();
             return View();
         }
         public async Task<IActionResult> MalwareAsync()

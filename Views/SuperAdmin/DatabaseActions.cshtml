@@ -1,8 +1,10 @@
-﻿@model IEnumerable<Log>
-
+﻿@using AkilliSayac.Areas.Identity.Data;
 
 @{
     ViewData["Title"] = "Veritabanı İşlemleri";
+
+    IEnumerable<Log> databaseLogs = ViewData["DatabaseLogs"] as IEnumerable<Log>;
+    IEnumerable<AkilliSayacUser> users = ViewData["Users"] as IEnumerable<AkilliSayacUser>;
 }
 
 <div class="pagetitle">
@@ -20,10 +22,10 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var log in Model)
+                @foreach (var log in databaseLogs)
                 {
                     <tr>
-                        <td>@log.UserId</td>
+                        <td>@users.Where(x => x.Id == log.UserId).FirstOrDefault().Email</td>
                         <td>@log.LogTime.ToString("dd-MM-yyyy HH:mm:ss")</td>
                     </tr>
                 }

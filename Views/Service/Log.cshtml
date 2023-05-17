@@ -42,21 +42,7 @@
                                     <td>@logType.LogTypeName</td>
                                     <td>@log.LogMessage</td>
                                     <td>
-                                     @{
-                                        if(logType.LogTypeId == 1)
-                                        {
-                                            <span class="badge bg-warning text-dark">Sistem</span>
-                                        }
-                                        else if (logType.LogTypeId == 2 || logType.LogTypeId == 4 || logType.LogTypeId == 5)
-                                        {
-                                            <span class="badge bg-danger">Arıza</span>
-                                        }
-                                        else if(logType.LogTypeId == 3)
-                                        {
-                                            <span class="badge bg-success">Başarılı</span>
-                                        }
-
-                                    }
+                                        <span class="@log.LogStatusBadge">@log.LogStatus</span>
                                     </td>
                                 </tr>
                             }
@@ -89,21 +75,7 @@
                                     <td>@log.UserId</td>
                                     <td>@log.LogMessage</td>
                                     <td>
-                                        @{
-                                            if (log.LogMessage == "Kullanıcının hesabı yönetici tarafından silindi." || log.LogMessage == "Kullanıcının blokesi yönetici tarafından kaldırıldı." || log.LogMessage == "Kullanıcı yönetici tarafından bloklandı.")
-                                            {
-                                                <span class="badge bg-warning text-dark">Yönetim</span>
-                                            }
-                                            else if (log.LogMessage == "Kullanıcı, hatalı giriş denedi." || log.LogMessage == "Kullanıcının hesabı bloke oldu.")
-                                            {
-                                                <span class="badge bg-danger">Uyarı</span>
-                                            }
-                                            else if (log.LogMessage == "Kullanıcı, başarılı giriş yaptı." || log.LogMessage == "Kullanıcı, parolasını değiştirdi." || log.LogMessage == "Kullanıcının hesabı oluşturuldu.")
-                                            {
-                                                <span class="badge bg-success">Başarılı</span>
-                                            }
-
-                                        }
+                                        <span class="@log.LogStatusBadge">@log.LogStatus</span>
                                     </td>
                                 </tr>
                             }

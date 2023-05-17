@@ -161,6 +161,8 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
                     log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
                     log.UserId = user.Id;
                     log.LogMessage = "Kullanıcının hesabı oluşturuldu.";
+                    log.LogStatusBadge = "badge bg-success";
+                    log.LogStatus = "Başarılı";
 
                     _db.Logs.Add(log);
                     _db.SaveChanges();

@@ -28,6 +28,8 @@ namespace AkilliSayac.Controllers
             this.roleManager = roleManager;
             this.userManager = userManager;
             this._db = db;
+
+            //for Sql Server
             this.database = new DatabaseOperation(new SqlServerDb(_db));
         }
 
@@ -43,6 +45,8 @@ namespace AkilliSayac.Controllers
             log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
             log.UserId = user.Id;
             log.LogMessage = "Kullanıcının hesabı yönetici tarafından silindi.";
+            log.LogStatusBadge = "badge bg-warning text-dark";
+            log.LogStatus = "Yönetim";
 
             _db.Logs.Add(log);
             _db.SaveChanges();
@@ -63,6 +67,8 @@ namespace AkilliSayac.Controllers
             log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
             log.UserId = user.Id;
             log.LogMessage = "Kullanıcının blokesi yönetici tarafından kaldırıldı.";
+            log.LogStatusBadge = "badge bg-warning text-dark";
+            log.LogStatus = "Yönetim";
 
             _db.Logs.Add(log);
 
@@ -83,6 +89,8 @@ namespace AkilliSayac.Controllers
             log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
             log.UserId = user.Id;
             log.LogMessage = "Kullanıcı yönetici tarafından bloklandı.";
+            log.LogStatusBadge = "badge bg-warning text-dark";
+            log.LogStatus = "Yönetim";
 
             _db.Logs.Add(log);
 

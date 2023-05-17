@@ -54,6 +54,8 @@ namespace AkilliSayac.Data
                         log.LogTime = date;
                         log.DeviceId = db.Devices.Where(x => x.DeviceName == deviceName).FirstOrDefault().DeviceId;
                         log.LogTypeId = db.LogTypes.Where(x => x.LogTypeName == "Sistem").FirstOrDefault().LogTypeId;
+                        log.LogStatus = "Sistem";
+                        log.LogStatusBadge = "badge bg-warning text-dark";
 
                         db.Logs.AddAsync(log);
                     }
@@ -85,6 +87,16 @@ namespace AkilliSayac.Data
                         log.DeviceId = 1;
                         log.LogTypeId = db.LogTypes.Where(x => x.LogMessageNumber == messageNumber).FirstOrDefault().LogTypeId;
                         log.LogMessage = message;
+                        if (messageNumber == 2112)
+                        {
+                            log.LogStatusBadge = "badge bg-success";
+                            log.LogStatus = "Başarılı";
+                        }
+                        else
+                        {
+                            log.LogStatusBadge = "badge bg-danger";
+                            log.LogStatus = "Arıza";
+                        }
 
                         db.Logs.Add(log);
                     }

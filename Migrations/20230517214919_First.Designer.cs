@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AkilliSayac.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230517163106_First")]
+    [Migration("20230517214919_First")]
     partial class First
     {
         /// <inheritdoc />
@@ -180,6 +180,14 @@ namespace AkilliSayac.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("LogMessage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogStatusBadge")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

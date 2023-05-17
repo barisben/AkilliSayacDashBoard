@@ -108,7 +108,9 @@ namespace AkilliSayac.Migrations
                     DeviceId = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LogMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LogTime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    LogTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LogStatusBadge = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LogStatus = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

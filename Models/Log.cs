@@ -21,5 +21,9 @@ namespace AkilliSayac.Models
         [Required]
         [DataType(DataType.Date)]
         public DateTime LogTime { get; set; }
+        [Required]
+        public string LogStatusBadge { get; set; } = string.Empty;
+        [Required]
+        public string LogStatus { get; set; } = string.Empty;
     }
 }

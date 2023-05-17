@@ -132,6 +132,8 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
             log.UserId = user.Id;
             log.LogMessage = "Kullanıcı, parolasını değiştirdi.";
+            log.LogStatusBadge = "badge bg-success";
+            log.LogStatus = "Başarılı";
 
             _db.Logs.Add(log);
             _db.SaveChanges();

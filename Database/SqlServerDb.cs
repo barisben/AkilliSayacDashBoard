@@ -28,6 +28,7 @@ namespace AkilliSayac.Database
             log.LogTime = DateTime.Now;
             log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "Database").FirstOrDefault().LogTypeId;
             log.UserId = userId;
+            log.LogStatus = "Database";
 
             _db.Logs.Add(log);
             _db.SaveChanges();

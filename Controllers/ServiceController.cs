@@ -41,6 +41,7 @@ namespace AkilliSayac.Controllers
         {
             ViewData["Malwares"] = await _db.Malwares.ToListAsync();
             ViewData["MalwareTypes"] = await _db.MalwareTypes.ToListAsync();
+            ViewData["Devices"] = await _db.Devices.ToListAsync();
             return View();
         }
     }

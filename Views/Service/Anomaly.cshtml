@@ -24,123 +24,117 @@
 
 <section class="section dashboard">
     <div class="row">
+        <!-- Reports -->
+        <div class="col-12">
+            <div class="card">
 
-        <!-- Left side columns -->
-        <div class="col-lg-8">
-            <div class="row">
-                <!-- Reports -->
-                <div class="col-12">
-                    <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Anomalies</h5>
 
-                        <div class="card-body">
-                            <h5 class="card-title">Anomalies</h5>
+                    <!-- Line Chart -->
+                    <div id="chart"></div>
 
-                            <!-- Line Chart -->
-                            <div id="chart"></div>
-
-                            <script>
-                                var options = {
-                                    series: [
-                                    {
-                                        name: 'Point',
-                                        data: [
-                                            @{
-                                                foreach(var point in points){
-                                                    @:{
-                                                        @:x:  "@point.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
-                                                        @:y: @point.AnomalyValue,
-                                                        @:message: "@point.AnomalyMessage"
-                                                    @:},
-                                                }
-                                            }
-                                            ]
-                                    },
-                                    {
-                                        name: 'Contextual',
-                                        data: [
-                                            @{
-                                                foreach(var contextual in contextuals){
-                                                    @:{
-                                                        @:x:  "@contextual.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
-                                                        @:y: @contextual.AnomalyValue,
-                                                        @:message: "@contextual.AnomalyMessage"
-                                                    @:},
-                                                }
-                                            }
-                                            ]
-                                    },
-                                    {
-                                        name: 'Collective',
-                                        data: [
-                                            @{
-                                                foreach(var collective in collectives){
-                                                    @:{
-                                                        @:x:  "@collective.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
-                                                        @:y: @collective.AnomalyValue,
-                                                        @:message: "@collective.AnomalyMessage"
-                                                    @:},
-                                                }
-                                            }
-                                            ]
-                                    }
-                                    ],
-                                    chart: {
-                                        height: 350,
-                                        type: 'scatter',
-                                        zoom: {
-                                            type: 'xy'
-                                        }
-                                    },
-                                    dataLabels: {
-                                        enabled: false
-                                    },
-                                    grid: {
-                                        xaxis: {
-                                            lines: {
-                                                show: true
-                                            }
-                                        },
-                                        yaxis: {
-                                            lines: {
-                                                show: true
-                                            }
-                                        },
-                                    },
-                                    xaxis: {
-                                        type: 'datetime'
-                                    },
-                                    yaxis: {
-                                        max: 105
-                                    },
-                                    tooltip: {
-                                        enabled: true,
-                                        x: {
-                                            format: 'dd MMM yyyy HH:mm:ss'
-                                        },
-                                        custom: function({ series, seriesIndex, dataPointIndex, w }) {
-                                            var data = w.globals.initialSeries[seriesIndex].data[dataPointIndex];
-
-                                            return '</br>' +
-                                                '<ul>' +
-                                                '<li><b>Date</b>: ' + data.x + '</li>' +
-                                                '<li><b>Value</b>: ' + data.y + '</li>' +
-                                                '<li><b>Message</b>: \'' + data.message + '\'</li>' +
-                                                '</ul>';
+                    <script>
+                        var options = {
+                            series: [
+                            {
+                                name: 'Point',
+                                data: [
+                                    @{
+                                        foreach(var point in points){
+                                            @:{
+                                                @:x:  "@point.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
+                                                @:y: @point.AnomalyValue,
+                                                @:message: "@point.AnomalyMessage"
+                                            @:},
                                         }
                                     }
-                                };
+                                    ]
+                            },
+                            {
+                                name: 'Contextual',
+                                data: [
+                                    @{
+                                        foreach(var contextual in contextuals){
+                                            @:{
+                                                @:x:  "@contextual.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
+                                                @:y: @contextual.AnomalyValue,
+                                                @:message: "@contextual.AnomalyMessage"
+                                            @:},
+                                        }
+                                    }
+                                    ]
+                            },
+                            {
+                                name: 'Collective',
+                                data: [
+                                    @{
+                                        foreach(var collective in collectives){
+                                            @:{
+                                                @:x:  "@collective.AnomalyTime.ToString("dd MMM yyyy HH:mm:ss UTC", new CultureInfo("en-US"))",
+                                                @:y: @collective.AnomalyValue,
+                                                @:message: "@collective.AnomalyMessage"
+                                            @:},
+                                        }
+                                    }
+                                    ]
+                            }
+                            ],
+                            chart: {
+                                height: 350,
+                                type: 'scatter',
+                                zoom: {
+                                    type: 'xy'
+                                }
+                            },
+                            dataLabels: {
+                                enabled: false
+                            },
+                            grid: {
+                                xaxis: {
+                                    lines: {
+                                        show: true
+                                    }
+                                },
+                                yaxis: {
+                                    lines: {
+                                        show: true
+                                    }
+                                },
+                            },
+                            xaxis: {
+                                type: 'datetime'
+                            },
+                            yaxis: {
+                                max: 105
+                            },
+                            tooltip: {
+                                enabled: true,
+                                x: {
+                                    format: 'dd MMM yyyy HH:mm:ss'
+                                },
+                                custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                                    var data = w.globals.initialSeries[seriesIndex].data[dataPointIndex];
 
-                                var chart = new ApexCharts(document.querySelector("#chart"), options);
-                                chart.render();
-                            </script>
+                                    return '</br>' +
+                                        '<ul>' +
+                                        '<li><b>Date</b>: ' + data.x + '</li>' +
+                                        '<li><b>Value</b>: ' + data.y + '</li>' +
+                                        '<li><b>Message</b>: \'' + data.message + '\'</li>' +
+                                        '</ul>';
+                                }
+                            }
+                        };
 
-                            <!-- End Line Chart -->
+                        var chart = new ApexCharts(document.querySelector("#chart"), options);
+                        chart.render();
+                    </script>
 
-                        </div>
+                    <!-- End Line Chart -->
 
-                    </div>
-                </div><!-- End Reports -->
+                </div>
+
             </div>
-        </div><!-- End Left side columns -->
+        </div><!-- End Reports -->
     </div>
 </section>

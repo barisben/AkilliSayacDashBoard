@@ -23,6 +23,11 @@ namespace AkilliSayac.Controllers
             this.userManager = userManager;
         }
 
+        public async Task<IActionResult> ThreatIntelligenceAsync()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> AnomalyAsync()
         {
             ViewData["Anomalies"] = await _db.Anomalies.ToListAsync();

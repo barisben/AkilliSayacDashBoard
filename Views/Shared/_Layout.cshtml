@@ -228,29 +228,36 @@
         </a>
       </li>
 
-            @if (User.Identity.IsAuthenticated)
+      <li class="nav-item">
+        <a class="nav-link collapsed" asp-area="" asp-controller="Service" asp-action="ThreatIntelligence">
+                    <i class="bi bi-virus"></i>
+          <span>Threat Intelligence</span>
+        </a>
+      </li>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            if (User.IsInRole("SuperAdmin"))
             {
-                if (User.IsInRole("SuperAdmin"))
-                {
-                    <li class="nav-item">
-                        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-                            <i class="bi bi-people"></i><span>Super Admin</span><i class="bi bi-chevron-down ms-auto"></i>
-                        </a>
-                        <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-                            <li>
-                                <a asp-area="" asp-controller="SuperAdmin" asp-action="UserList">
-                                    <i class="bi bi-circle"></i><span>Kullanıcı Listesi</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a asp-area="" asp-controller="SuperAdmin" asp-action="DatabaseActions">
-                                    <i class="bi bi-circle"></i><span>Veritabanı İşlemleri</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                }
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-people"></i><span>Super Admin</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a asp-area="" asp-controller="SuperAdmin" asp-action="UserList">
+                                <i class="bi bi-circle"></i><span>Kullanıcı Listesi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="SuperAdmin" asp-action="DatabaseActions">
+                                <i class="bi bi-circle"></i><span>Veritabanı İşlemleri</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             }
+        }
 
     </ul>
 

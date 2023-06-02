@@ -230,10 +230,17 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" asp-area="" asp-controller="Service" asp-action="ThreatIntelligence">
-                    <i class="bi bi-virus"></i>
-          <span>Threat Intelligence</span>
+            <i class="bi bi-virus"></i>
+            <span>Threat Intelligence</span>
         </a>
       </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" asp-area="" asp-controller="Service" asp-action="MalwareAnalysis">
+                <i class="bi bi-file-bar-graph"></i>
+                <span>Malware Analysis</span>
+            </a>
+        </li>
 
         @if (User.Identity.IsAuthenticated)
         {

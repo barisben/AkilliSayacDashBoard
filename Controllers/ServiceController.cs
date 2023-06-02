@@ -23,7 +23,12 @@ namespace AkilliSayac.Controllers
             this.userManager = userManager;
         }
 
-        public async Task<IActionResult> ThreatIntelligenceAsync()
+        public IActionResult ThreatIntelligence()
+        {
+            return View();
+        }
+
+        public IActionResult MalwareAnalysis()
         {
             return View();
         }

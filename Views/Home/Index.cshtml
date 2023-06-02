@@ -165,9 +165,6 @@
                     </div>
                 </div><!-- End Reports -->
 
-
-
-
                 <!-- LOGS -->
                 <div class="col-12">
                     <div class="card recent-sales overflow-auto">
@@ -208,8 +205,6 @@
 
                     </div>
                 </div><!-- End LOGS -->
-
-
 
             </div>
         </div><!-- End Left side columns -->
@@ -335,6 +330,76 @@
                         </div><!-- End activity item-->
 
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Actor Activity</h5>
+
+                        <!-- Bar Chart -->
+                        <div id="barChart"></div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                new ApexCharts(document.querySelector("#barChart"), {
+                                    series: [{
+                                        data: [1380, 1350, 540, 470]
+                                    }],
+                                    chart: {
+                                        type: 'bar'
+                                    },
+                                    plotOptions: {
+                                        bar: {
+                                            borderRadius: 4,
+                                            horizontal: true,
+                                        }
+                                    },
+                                    dataLabels: {
+                                        enabled: false
+                                    },
+                                    xaxis: {
+                                        categories: ['APT34', 'FIN11', 'APT41', 'TEMP.hex'
+                                        ],
+                                    }
+                                }).render();
+                            });
+                        </script>
+                        <!-- End Bar Chart -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h5 class="card-title">Most Active Malware TOP 10</h5>
+
+                    <!-- Donut Chart -->
+                    <div id="donutChart"></div>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            new ApexCharts(document.querySelector("#donutChart"), {
+                                series: [200, 100, 70, 50, 40, 30, 25, 15, 7, 2],
+                                chart: {
+                                    height: 350,
+                                    type: 'donut',
+                                    toolbar: {
+                                        show: true
+                                    }
+                                },
+                                labels: ['AgentTesla', 'Emotet', 'LokiBot', 'Urnsif', 'NanoCore', 'TrickBot', 'Remcos', 'Pony', 'AZORult', 'njRAT'],
+                            }).render();
+                        });
+                    </script>
+                    <!-- End Donut Chart -->
                 </div>
             </div>
         </div>

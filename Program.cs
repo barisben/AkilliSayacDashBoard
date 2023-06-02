@@ -56,6 +56,7 @@ builder.Services.AddScoped<ChangePasswordResourceFilter>();
 builder.Services.AddMvc(o =>
 {
     o.Filters.Add(typeof(ChangePasswordResourceFilter));
+    o.Filters.Add(typeof(AuthenticatorResourceFilter2fa));
 });
 
 var app = builder.Build();

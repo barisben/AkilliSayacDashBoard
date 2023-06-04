@@ -127,17 +127,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    user.LastLoginDate = DateTime.Now;
-                    await _signInManager.UserManager.UpdateAsync(user);
-
-                    log.LogMessage = "Kullanıcı, başarılı giriş yaptı.";
-                    log.LogStatusBadge = "badge bg-success";
-                    log.LogStatus = "Başarılı";
-
-
-                    _db.Logs.Add(log);
-                    _db.SaveChanges();
-
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }
@@ -147,7 +136,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
                 }
                 if (result.IsLockedOut)
                 {
-                    log.LogMessage = "Kullanıcının hesabı bloke oldu.";
+                    log.LogMessage = "Kullanıcının hesabı giriş yaparken bloke oldu.";
                     log.LogStatusBadge = "badge bg-danger";
                     log.LogStatus = "Uyarı";
 

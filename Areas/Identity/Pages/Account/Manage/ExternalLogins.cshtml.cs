@@ -17,6 +17,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 {
     public class ExternalLoginsModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly IUserStore<AkilliSayacUser> _userStore;
@@ -138,5 +149,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             StatusMessage = "The external login was added.";
             return RedirectToPage();
         }
+        */
     }
 }

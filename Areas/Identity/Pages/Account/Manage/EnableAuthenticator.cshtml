@@ -1,54 +1,124 @@
 ﻿@page
 @model EnableAuthenticatorModel
 @{
-    ViewData["Title"] = "Configure authenticator app";
+    ViewData["Title"] = "Two-Factor Authentication";
     ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+    Layout = null;
 }
 
 <partial name="_StatusMessage" for="StatusMessage" />
-<h3>@ViewData["Title"]</h3>
-<div>
-    <p>To use an authenticator app go through the following steps:</p>
-    <ol class="list">
-        <li>
-            <p>
-                Download a two-factor authenticator app like Microsoft Authenticator for
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825072">Android</a> and
-                <a href="https://go.microsoft.com/fwlink/?Linkid=825073">iOS</a> or
-                Google Authenticator for
-                <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en">Android</a> and
-                <a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8">iOS</a>.
-            </p>
-        </li>
-        <li>
-            <p>Scan the QR Code or enter this key <kbd>@Model.SharedKey</kbd> into your two factor authenticator app. Spaces and casing do not matter.</p>
-            <div class="alert alert-info">Learn how to <a href="https://go.microsoft.com/fwlink/?Linkid=852423">enable QR code generation</a>.</div>
-            <div id="qrCode"></div>
-            <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
-        </li>
-        <li>
-            <p>
-                Once you have scanned the QR code or input the key above, your two factor authentication app will provide you
-                with a unique code. Enter the code in the confirmation box below.
-            </p>
-            <div class="row">
-                <div class="col-md-6">
-                    <form id="send-code" method="post">
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.Code" class="form-control" autocomplete="off" placeholder="Please enter the code."/>
-                            <label asp-for="Input.Code" class="control-label form-label">Verification Code</label>
-                            <span asp-validation-for="Input.Code" class="text-danger"></span>
-                        </div>
-                        <button type="submit" class="w-100 btn btn-lg btn-primary">Verify</button>
-                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                    </form>
-                </div>
-            </div>
-        </li>
-    </ol>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
 
-@section Scripts {
+
+    <!-- Favicons -->
+    <link href="~/img/favicon.png" rel="icon" asp-append-version="true">
+    <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon" asp-append-version="true">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/quill/quill.snow.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/quill/quill.bubble.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/remixicon/remixicon.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/simple-datatables/style.css" rel="stylesheet" asp-append-version="true">
+
+    <!-- Template Main CSS File -->
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                            <div class="d-flex justify-content-center py-4">
+                                <a asp-area="" asp-controller="Home" asp-action="Index" class="logo d-flex align-items-center w-auto">
+                                    <img src="~/img/logo.png" alt="">
+                                    <span class="d-none d-lg-block">AkilliSayac</span>
+                                </a>
+                            </div><!-- End Logo -->
+
+                            <div class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">@ViewData["Title"]</h5>
+                                        <p class="text-center small">
+                                            2 adımlı doğrulamayı etkinleştirmek için aşağıdaki adımları takip edin:
+                                        </p>
+                                        <p class="text-center small">
+                                            Telefonunuza Microsoft Authenticator veya Google Authenticator uygulamasını indirin.
+                                        </p>
+                                        <p class="text-center small">Uygulamayı açtıktan sonra aşağıdaki QR Code'u okutun veya bu anahtarı girin: <kbd>@Model.SharedKey</kbd></p>
+                                        <div id="qrCode" style="display: flex; justify-content: center;"></div>
+                                        <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
+                                        <p class="text-center small">
+                                            Kodu girdiğinizde veya QR'ı okuttuğunuzda uygulama size bir doğrulama kodu vericek. Bu kodu aşağıya girin.
+                                        </p>
+                                    </div>
+
+                                    <form class="row g-3 needs-validation" id="send-code" method="post">
+                                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                                        <div class="col-12">
+                                            <label asp-for="Input.Code" class="form-label">Doğrulama Kodu</label>
+                                            <input asp-for="Input.Code" class="form-control" autocomplete="off" aria-required="true" />
+                                            <span asp-validation-for="Input.Code" class="text-danger"></span>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="w-100 btn btn-lg btn-primary">Doğrula</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="credits">
+                                Designed by <a href="#">AkilliSayac</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        @section Scripts {
+            
+        }
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/lib/apexcharts/apexcharts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/lib/chart.js/chart.min.js" asp-append-version="true"></script>
+    <script src="~/lib/echarts/echarts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/quill/quill.min.js" asp-append-version="true"></script>
+    <script src="~/lib/simple-datatables/simple-datatables.js" asp-append-version="true"></script>
+    <script src="~/lib/tinymce/tinymce.min.js" asp-append-version="true"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js" asp-append-version="true"></script>
+
     <partial name="_ValidationScriptsPartial" />
 
     <script src="~/lib/qrcodejs/qrcode.js"></script>
@@ -62,4 +132,6 @@
             }
         );
     </script>
-}
+</body>
+
+</html>

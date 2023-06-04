@@ -14,6 +14,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 {
     public class Disable2faModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly ILogger<Disable2faModel> _logger;
 
@@ -66,5 +77,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             StatusMessage = "2fa has been disabled. You can reenable 2fa when you setup an authenticator app";
             return RedirectToPage("./TwoFactorAuthentication");
         }
+        */
     }
 }

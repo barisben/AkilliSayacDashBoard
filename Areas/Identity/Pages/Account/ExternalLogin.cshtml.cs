@@ -24,6 +24,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class ExternalLoginModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly IUserStore<AkilliSayacUser> _userStore;
@@ -220,5 +231,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             }
             return (IUserEmailStore<AkilliSayacUser>)_userStore;
         }
+        */
     }
 }

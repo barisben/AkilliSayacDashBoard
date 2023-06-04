@@ -17,6 +17,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 {
     public class ConfirmEmailModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
 
         public ConfirmEmailModel(UserManager<AkilliSayacUser> userManager)
@@ -48,5 +59,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             StatusMessage = result.Succeeded ? "Thank you for confirming your email." : "Error confirming your email.";
             return Page();
         }
+        */
     }
 }

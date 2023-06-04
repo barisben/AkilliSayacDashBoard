@@ -12,6 +12,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 {
     public class PersonalDataModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly ILogger<PersonalDataModel> _logger;
 
@@ -25,7 +36,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnGet()
         {
-            /*
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -33,8 +43,9 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             }
 
             return Page();
-            */
+            
             return NotFound();
         }
+        */
     }
 }

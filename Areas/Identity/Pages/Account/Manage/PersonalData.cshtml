@@ -1,11 +1,12 @@
-﻿@page
+﻿@*
+@page
 @model PersonalDataModel
 @{
     ViewData["Title"] = "Personal Data";
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
 
-@*
+
 <div class="row">
     <div class="col-md-6">
         <p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
@@ -25,9 +26,3 @@
     <partial name="_ValidationScriptsPartial" />
 }
 *@
-
-<h1>@ViewData["Title"]</h1>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}

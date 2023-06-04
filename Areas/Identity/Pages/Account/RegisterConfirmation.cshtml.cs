@@ -18,6 +18,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class RegisterConfirmationModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly IEmailSender _sender;
 
@@ -76,5 +87,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 
             return Page();
         }
+        */
     }
 }

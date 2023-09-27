@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "rG+nPAk3ay82MPTbv+es2EF/UyX7Uj2vpdZbc1A8Adc=",
+=======
+  "Hash": "eVTgD7BEGCYFPKQSbvc0TspSdGMbrWvX2HYRN6WUsZ8=",
+>>>>>>> 09da7909de79134beb453f04136b8b719d4ab0be
   "Source": "AkilliSayac",
   "BasePath": "_content/AkilliSayac",
   "Mode": "Default",
@@ -12325,7 +12329,45 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\quill\\quill.bubble.css",
+=======
+      "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\qrcodejs\\qrcode.js",
+      "SourceId": "AkilliSayac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\",
+      "BasePath": "_content/AkilliSayac",
+      "RelativePath": "lib/qrcodejs/qrcode.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\qrcodejs\\qrcode.js"
+    },
+    {
+      "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\qrcodejs\\qrcode.min.js",
+      "SourceId": "AkilliSayac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\",
+      "BasePath": "_content/AkilliSayac",
+      "RelativePath": "lib/qrcodejs/qrcode.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\qrcodejs\\qrcode.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\quill\\quill.bubble.css",
+>>>>>>> 09da7909de79134beb453f04136b8b719d4ab0be
       "SourceId": "AkilliSayac",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\",

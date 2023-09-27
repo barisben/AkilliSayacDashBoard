@@ -9,12 +9,12 @@ using System;
 namespace AkilliSayac.Data
 {
     [Authorize]
-    public class ChangePasswordResourceFilter : IAsyncResourceFilter
+    public class AuthenticatorResourceFilter2fa : IAsyncResourceFilter
     {
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly IUrlHelperFactory _urlHelperFactory;
 
-        public ChangePasswordResourceFilter(UserManager<AkilliSayacUser> userManager, IUrlHelperFactory urlHelperFactory)
+        public AuthenticatorResourceFilter2fa(UserManager<AkilliSayacUser> userManager, IUrlHelperFactory urlHelperFactory)
         {
             _userManager = userManager;
             _urlHelperFactory = urlHelperFactory;
@@ -23,7 +23,7 @@ namespace AkilliSayac.Data
         public async Task OnResourceExecutionAsync(ResourceExecutingContext context, ResourceExecutionDelegate next)
         {
             var urlHelper = _urlHelperFactory.GetUrlHelper(context);
-            var redirectUrl = urlHelper.Content("~/Identity/Account/Manage/ChangePassword");
+            var redirectUrl = urlHelper.Content("~/Identity/Account/Manage/EnableAuthenticator");
             var logoutUrl = urlHelper.Content("~/Identity/Account/Logout");
             var currentUrl = context.HttpContext.Request.Path;
 
@@ -32,7 +32,7 @@ namespace AkilliSayac.Data
                 var user = await _userManager.GetUserAsync(context.HttpContext.User);
                 if(user!= null)
                 {
-                    if (user.LastPasswordChangedDate.AddDays(90) < DateTime.Now)
+                    if (user.TwoFactorEnabled == false)
                     {
                         context.Result = new RedirectResult(redirectUrl);
                         return;

@@ -14,6 +14,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 {
     public class ResetAuthenticatorModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly ILogger<ResetAuthenticatorModel> _logger;
@@ -64,5 +75,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 
             return RedirectToPage("./EnableAuthenticator");
         }
+        */
     }
 }

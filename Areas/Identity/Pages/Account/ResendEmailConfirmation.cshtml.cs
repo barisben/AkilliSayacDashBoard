@@ -20,6 +20,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class ResendEmailConfirmationModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly IEmailSender _emailSender;
 
@@ -85,5 +96,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
             return Page();
         }
+        */
     }
 }

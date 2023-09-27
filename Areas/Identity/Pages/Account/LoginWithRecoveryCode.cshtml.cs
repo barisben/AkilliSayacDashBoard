@@ -6,6 +6,8 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using AkilliSayac.Areas.Identity.Data;
+using AkilliSayac.Data;
+using AkilliSayac.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -18,15 +20,18 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly ILogger<LoginWithRecoveryCodeModel> _logger;
+        private readonly ApplicationDbContext _db;
 
         public LoginWithRecoveryCodeModel(
             SignInManager<AkilliSayacUser> signInManager,
             UserManager<AkilliSayacUser> userManager,
-            ILogger<LoginWithRecoveryCodeModel> logger)
+            ILogger<LoginWithRecoveryCodeModel> logger,
+            ApplicationDbContext db)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _logger = logger;
+            _db = db;
         }
 
         /// <summary>
@@ -55,7 +60,7 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             [BindProperty]
             [Required]
             [DataType(DataType.Text)]
-            [Display(Name = "Recovery Code")]
+            [Display(Name = "Kurtarma Kodu")]
             public string RecoveryCode { get; set; }
         }
 
@@ -92,20 +97,50 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 
             var userId = await _userManager.GetUserIdAsync(user);
 
+            Log log = new Log();
+            log.LogTime = DateTime.Now;
+            log.LogTypeId = _db.LogTypes.Where(x => x.LogTypeName == "User").FirstOrDefault().LogTypeId;
+            log.UserId = user.Id;
+
             if (result.Succeeded)
             {
+                user.LastLoginDate = DateTime.Now;
+                await _signInManager.UserManager.UpdateAsync(user);
+
+                log.LogMessage = "Kullanıcı, 2fa kurtarma kodu ile başarılı giriş yaptı.";
+                log.LogStatusBadge = "badge bg-success";
+                log.LogStatus = "Başarılı";
+
+
+                _db.Logs.Add(log);
+                _db.SaveChanges();
+
                 _logger.LogInformation("User with ID '{UserId}' logged in with a recovery code.", user.Id);
                 return LocalRedirect(returnUrl ?? Url.Content("~/"));
             }
             if (result.IsLockedOut)
             {
+                log.LogMessage = "Kullanıcının hesabı 2fa sırasında bloke oldu.";
+                log.LogStatusBadge = "badge bg-danger";
+                log.LogStatus = "Uyarı";
+
+                _db.Logs.Add(log);
+                _db.SaveChanges();
+
                 _logger.LogWarning("User account locked out.");
                 return RedirectToPage("./Lockout");
             }
             else
             {
+                log.LogMessage = "Kullanıcı, 2fa kurtarma kodunu hatalı girdi.";
+                log.LogStatusBadge = "badge bg-danger";
+                log.LogStatus = "Uyarı";
+
+                _db.Logs.Add(log);
+                _db.SaveChanges();
+
                 _logger.LogWarning("Invalid recovery code entered for user with ID '{UserId}' ", user.Id);
-                ModelState.AddModelError(string.Empty, "Invalid recovery code entered.");
+                ModelState.AddModelError(string.Empty, "Kurtarma kodu hatalı.");
                 return Page();
             }
         }

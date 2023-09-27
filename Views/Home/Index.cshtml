@@ -165,9 +165,6 @@
                     </div>
                 </div><!-- End Reports -->
 
-
-
-
                 <!-- LOGS -->
                 <div class="col-12">
                     <div class="card recent-sales overflow-auto">
@@ -209,14 +206,12 @@
                     </div>
                 </div><!-- End LOGS -->
 
-
-
             </div>
         </div><!-- End Left side columns -->
 
         <!-- Right side columns -->
         <div class="col-lg-4">
-                <div class="card">
+            <div class="card">
                 <div class="card-body pb-0">
                     <h5 class="card-title">Malwares</h5>
                     <!-- MALWARES -->
@@ -233,7 +228,7 @@
                                     left: 'center'
                                 },
                                 series: [{
-                                    name: 'Access From',
+                                    name: 'Malware Count',
                                     type: 'pie',
                                     radius: '50%',
                                     data: [{
@@ -266,7 +261,147 @@
                     </script>
                     <!-- End MALWARES -->
                 </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h5 class="card-title">Recent Activity</h5>
+
+                    <div class="activity">
+
+                        <div class="activity-item d-flex">
+                            <div class="activite-label">32 min</div>
+                            <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
+                            <div class="activity-content">
+                                <a href="#" class="fw-bold">
+                                    CVE-2020-14344-x.org libX11 1.6.8 Integer Overflow or Wraparound Vulnerability
+                                </a>
+                            </div>
+                        </div><!-- End activity item-->
+
+                        <div class="activity-item d-flex">
+                            <div class="activite-label">56 min</div>
+                            <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+                            <div class="activity-content">
+                                <a href="#" class="fw-bold">
+                                    CVE-2020-6829 - Mozilla NSS 3.54 Use of a Broken or Risky Cryptographic Algorithm Vulnerability
+                                </a>
+                            </div>
+                        </div><!-- End activity item-->
+
+                        <div class="activity-item d-flex">
+                            <div class="activite-label">2 hrs</div>
+                            <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+                            <div class="activity-content">
+                                <a href="#" class="fw-bold">
+                                    CVE-2020-12400 - Mozilla NSS 3.54 Use of a Broken or Risky Cryptographic Algorithm Vulnerability
+                                </a>
+                            </div>
+                        </div><!-- End activity item-->
+
+                        <div class="activity-item d-flex">
+                            <div class="activite-label">1 day</div>
+                            <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+                            <div class="activity-content">
+                                <a href="#" class="fw-bold">
+                                    CVE-2020-14344-x.org libX11 1.6.8 Integer Overflow or Wraparound Vulnerability
+                                </a>
+                            </div>
+                        </div><!-- End activity item-->
+
+                        <div class="activity-item d-flex">
+                            <div class="activite-label">2 days</div>
+                            <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+                            <div class="activity-content">
+                                <a href="#" class="fw-bold">
+                                    CVE-2020-14344-x.org libX11 1.6.8 Integer Overflow or Wraparound Vulnerability
+                                </a>
+                            </div>
+                        </div><!-- End activity item-->
+
+                        <div class="activity-item d-flex">
+                            <div class="activite-label">4 weeks</div>
+                            <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
+                            <div class="activity-content">
+                                <a href="#" class="fw-bold">
+                                    CVE-2020-14344-x.org libX11 1.6.8 Integer Overflow or Wraparound Vulnerability
+                                </a>
+                            </div>
+                        </div><!-- End activity item-->
+
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Actor Activity</h5>
+
+                        <!-- Bar Chart -->
+                        <div id="barChart"></div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                new ApexCharts(document.querySelector("#barChart"), {
+                                    series: [{
+                                        data: [1380, 1350, 540, 470]
+                                    }],
+                                    chart: {
+                                        type: 'bar'
+                                    },
+                                    plotOptions: {
+                                        bar: {
+                                            borderRadius: 4,
+                                            horizontal: true,
+                                        }
+                                    },
+                                    dataLabels: {
+                                        enabled: false
+                                    },
+                                    xaxis: {
+                                        categories: ['APT34', 'FIN11', 'APT41', 'TEMP.hex'
+                                        ],
+                                    }
+                                }).render();
+                            });
+                        </script>
+                        <!-- End Bar Chart -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h5 class="card-title">Most Active Malware TOP 10</h5>
+
+                    <!-- Donut Chart -->
+                    <div id="donutChart"></div>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            new ApexCharts(document.querySelector("#donutChart"), {
+                                series: [200, 100, 70, 50, 40, 30, 25, 15, 7, 2],
+                                chart: {
+                                    height: 350,
+                                    type: 'donut',
+                                    toolbar: {
+                                        show: true
+                                    }
+                                },
+                                labels: ['AgentTesla', 'Emotet', 'LokiBot', 'Urnsif', 'NanoCore', 'TrickBot', 'Remcos', 'Pony', 'AZORult', 'njRAT'],
+                            }).render();
+                        });
+                    </script>
+                    <!-- End Donut Chart -->
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -16,6 +16,18 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
 {
     public class ConfirmEmailChangeModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly SignInManager<AkilliSayacUser> _signInManager;
 
@@ -66,5 +78,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account
             StatusMessage = "Thank you for confirming your email change.";
             return Page();
         }
+        */
     }
 }

@@ -18,6 +18,17 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
 {
     public class EmailModel : PageModel
     {
+        public IActionResult OnGet()
+        {
+            return NotFound();
+        }
+
+        public IActionResult OnPost()
+        {
+            return NotFound();
+        }
+
+        /*
         private readonly UserManager<AkilliSayacUser> _userManager;
         private readonly SignInManager<AkilliSayacUser> _signInManager;
         private readonly IEmailSender _emailSender;
@@ -168,5 +179,6 @@ namespace AkilliSayac.Areas.Identity.Pages.Account.Manage
             StatusMessage = "Verification email sent. Please check your email.";
             return RedirectToPage();
         }
+        */
     }
 }

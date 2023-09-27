@@ -56,6 +56,7 @@ builder.Services.AddScoped<ChangePasswordResourceFilter>();
 builder.Services.AddMvc(o =>
 {
     o.Filters.Add(typeof(ChangePasswordResourceFilter));
+    o.Filters.Add(typeof(AuthenticatorResourceFilter2fa));
 });
 
 var app = builder.Build();
@@ -94,7 +95,8 @@ using (var scope = app.Services.CreateScope())
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}")
+    .RequireAuthorization();
 
 app.MapRazorPages();
 

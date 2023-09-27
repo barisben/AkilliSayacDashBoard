@@ -2653,7 +2653,19 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\quill\\quill.bubble.css",
+=======
+      "Id": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\qrcodejs\\qrcode.js",
+      "PackagePath": "staticwebassets\\lib\\qrcodejs\\qrcode.js"
+    },
+    {
+      "Id": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\qrcodejs\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\qrcodejs\\qrcode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\wwwroot\\lib\\quill\\quill.bubble.css",
+>>>>>>> 09da7909de79134beb453f04136b8b719d4ab0be
       "PackagePath": "staticwebassets\\lib\\quill\\quill.bubble.css"
     },
     {

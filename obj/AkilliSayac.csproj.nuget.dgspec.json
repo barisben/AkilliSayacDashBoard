@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {}
+    "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {
+    "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
+        "projectUniqueName": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
         "projectName": "AkilliSayac",
-        "projectPath": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
-        "packagesPath": "C:\\Users\\Baris Yilmaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Baris Yilmaz\\source\\repos\\AkilliSayac\\AkilliSayac\\obj\\",
+        "projectPath": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\AkilliSayac.csproj",
+        "packagesPath": "C:\\Users\\Baris\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Baris\\Desktop\\GitHub\\AkilliSayac\\AkilliSayac\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Baris Yilmaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Baris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -91,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
